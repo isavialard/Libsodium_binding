@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/tweetnacl.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 3" >
+      <vfs_project />
+      <vfs_file>/home/vialard/tweetnacl.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/tweetnacl.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/test.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnaclhl.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnacl_h.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnaclhl.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/libsodium/libsodium.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 468" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/libsodium/common/libsodium_binding.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 2" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/libsodium/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 4" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/libsodium/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 15" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/libsodium/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 53" line=" 3" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/libsodium/libsodium.gpr</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file />
+    </file_marker>
+  </Project>
+</Locations>

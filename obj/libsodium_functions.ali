@@ -1,0 +1,117 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U libsodium_functions%b	libsodium_functions.adb	5ed44152 NE OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W libsodium_binding%s	libsodium_binding.ads	libsodium_binding.ali
+
+U libsodium_functions%s	libsodium_functions.ads	da2c536e EE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+W libsodium_binding%s	libsodium_binding.ads	libsodium_binding.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cexten.ads		20190518041254 38d7e116 interfaces.c.extensions%s
+D i-cstrin.ads		20190518041255 341d0ddf interfaces.c.strings%s
+D libsodium_binding.ads	20190704142627 f465d6f1 libsodium_binding%s
+D libsodium_functions.ads  20190704152636 42bf7512 libsodium_functions%s
+D libsodium_functions.adb  20190704152725 e80ee2b1 libsodium_functions%b
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+G a e
+G c Z s b [crypto_generichash libsodium_functions 24 14 none]
+G c Z s b [crypto_generichash_keyless libsodium_functions 31 14 none]
+G c Z s b [crypto_generichash_init libsodium_functions 36 14 none]
+G c Z s b [crypto_generichash_init_keyless libsodium_functions 41 14 none]
+G c Z s b [crypto_generichash_update libsodium_functions 45 14 none]
+G c Z s b [crypto_generichash_final libsodium_functions 49 14 none]
+G c Z s b [crypto_generichash_keygen libsodium_functions 54 14 none]
+G r c none [crypto_generichash libsodium_functions 24 14 none] [crypto_generichash libsodium_binding 469 13 none]
+G r c none [crypto_generichash_keyless libsodium_functions 31 14 none] [crypto_generichash libsodium_binding 469 13 none]
+G r c none [crypto_generichash_init libsodium_functions 36 14 none] [crypto_generichash_init libsodium_binding 481 13 none]
+G r c none [crypto_generichash_init_keyless libsodium_functions 41 14 none] [crypto_generichash_init libsodium_binding 481 13 none]
+G r c none [crypto_generichash_update libsodium_functions 45 14 none] [crypto_generichash_update libsodium_binding 490 13 none]
+G r c none [crypto_generichash_final libsodium_functions 49 14 none] [crypto_generichash_final libsodium_binding 498 13 none]
+G r c none [crypto_generichash_keygen libsodium_functions 54 14 none] [crypto_generichash_keygen libsodium_binding 506 14 none]
+X 4 interfac.ads
+38K9*Interfaces 184e15 9|2r6 2r24 3r6
+X 5 i-c.ads
+18K20*C 230e17 9|2w17 2r35 3r17
+35I9*int<integer>
+X 6 i-cexten.ads
+37K22*Extensions 476e28 9|3w19
+X 8 libsodium_binding.ads
+10K9*Libsodium_Binding 618e22 9|4w6 4r29 10|1w6 1r29 14r10 36r10 46r10 57r10
+. 68r10 76r7
+15M9*uint8 9|15r47 16r47 17r47 18r47 19r47 20r47 21r47 22r47 10|12r15 23r15
+. 66r15
+16A9*MyArray(15M9)<13M9> 9|26r19 33r19 47r22 10|9r19 21r19 54r22
+17A9*Key(15M9)<15M9> 9|25r19 27r19 32r19 38r22 51r22 54r49 10|8r19 10r19
+. 20r19 24r21 33r22 44r21 64r22 73r49
+42R9*crypto_generichash_state 45e6 9|37r22 42r19 46r22 50r22 10|32r22 42r19
+. 53r22 63r22
+469V13*crypto_generichash{5|35I9} 10|14s28 26s10
+481V13*crypto_generichash_init{5|35I9} 10|36s28 46s28
+490V13*crypto_generichash_update{5|35I9} 10|57s28
+498V13*crypto_generichash_final{5|35I9} 10|68s28
+506U14*crypto_generichash_keygen 10|76s25
+X 9 libsodium_functions.ads
+6K9*Libsodium_Functions 58l5 58e24 10|2b14 81l5 81t24
+9X1*Crypto_Error 10|15r16 27r16 37r16 47r16 58r16 69r16
+15m3*Crypto_Generichash_BYTES_MIN{8|15M9}
+16m3*Crypto_Generichash_BYTES{8|15M9} 28r25 34r25 52r25 10|36r72 46r65
+17m3*Crypto_Generichash_BYTES_MAX{8|15M9}
+18m3*Crypto_Generichash_KEYBYTES_MIN{8|15M9}
+19m3*Crypto_Generichash_KEYBYTES{8|15M9} 29r26 39r24 55r23
+20m3*Crypto_Generichash_KEYBYTES_MAX{8|15M9}
+21m3*Crypto_Generichash_SALTBYTES{8|15M9}
+22m3*Crypto_Generichash_PERSONALBYTES{8|15M9}
+24U14*Crypto_Generichash 25<7 26>7 27>7 10|7b14 17l8 17t26
+25a7 FP{8|17A9} 28r13 10|8b7 12r24 14m47 14r47
+26a7 M{8|16A9} 10|9b7 14r58 14r61
+27a7 K{8|17A9} 29r15 10|10b7 14r71 14r74
+31U14*Crypto_Generichash_Keyless 32<7 33>7 10|19b14 29l8 29t34
+32a7 FP{8|17A9} 34r13 10|20b7 23r24 26m29 26r29
+33a7 M{8|16A9} 10|21b7 26r40 26r43
+36U14*Crypto_Generichash_Init 37<7 38>7 10|31b14 39l8 39t31
+37r7 State{8|42R9} 10|32b7 36m52 36r52
+38a7 K{8|17A9} 39r13 10|33b7 36r59 36r62
+41U14*Crypto_Generichash_Init_Keyless 42<7 10|41b14 49l8 49t39
+42r7 State{8|42R9} 10|42b7 46m52 46r52
+45U14*Crypto_Generichash_Update 46<7 47>7 10|52b14 60l8 60t33
+46r7 State{8|42R9} 10|53b7 57m54 57r54
+47a7 M{8|16A9} 10|54b7 57r61 57r64
+49U14*Crypto_Generichash_Final 50<7 51>7 10|62b14 71l8 71t32
+50r7 State{8|42R9} 10|63b7 68m53 68r53
+51a7 FP{8|17A9} 52r13 10|64b7 66r24 68r60
+54U14*Crypto_Generichash_Keygen 54<41 10|73b14 77l8 77t33
+54a41 K{8|17A9} 55r14 10|73b41 76m51
+X 10 libsodium_functions.adb
+12m7 FPlen{8|15M9} 14r51
+23m7 FPlen{8|15M9} 26r33
+24a7 K{8|17A9} 26r53
+44a7 K{8|17A9} 46r59
+66m7 FPlen{8|15M9} 68r64
+
