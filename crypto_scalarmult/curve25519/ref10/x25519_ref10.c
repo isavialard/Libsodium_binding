@@ -8,6 +8,7 @@
 #include "utils.h"
 #include "x25519_ref10.h"
 
+
 /*
  * Reject small order points early to mitigate the implications of
  * unexpected optimizations that would affect the ref10 code.
