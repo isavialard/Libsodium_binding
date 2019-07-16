@@ -1,20 +1,12 @@
 project LibSodium is
     for Languages use ("Ada","C");
-   for Source_Dirs use ("common","include","include/sodium","include/sodium/private",
-                        "crypto_generichash","crypto_generichash/blake2b",
-                        "crypto_generichash/blake2b/ref","crypto_aead","crypto_auth",
-                        "crypto_box","crypto_core","crypto_core/salsa/ref",
-                        "crypto_hash","crypto_kdf","crypto_kx","crypto_onetimeauth",
-                        "crypto_onetimeauth/poly1305","crypto_onetimeauth/poly1305/donna",
-                        "crypto_pwhash","crypto_pwhash/argon2","crypto_scalarmult",
-                        "crypto_scalarmult/curve25519","crypto_scalarmult/curve25519/sandy2x",
-                        "crypto_scalarmult/curve25519/ref10","crypto_scalarmult/ed25519/ref10",
-                        "crypto_secretbox","crypto_secretstream","crypto_shorthash",
-                        "crypto_sign","crypto_stream","crypto_stream/chacha20",
-                        "crypto_stream/chacha20/ref","crypto_stream/salsa20",
-                        "crypto_stream/salsa20/ref","crypto_verify/sodium","randombytes",
-                        "randombytes/internal","randombytes/sysrandom","sodium");
+    for Source_Dirs use ("common","libsodium_body/**","include/**");
     for Object_Dir use "obj";
 
-    for Main use ("test.adb");
+   for Main use ("test.adb");
+
+   package Compiler is
+      for Switches ("ada") use ("-gnata", "-gnatwa", "-gnaty3M79SabCdefhiklnprstux");
+   end Compiler;
+
 end Libsodium;
