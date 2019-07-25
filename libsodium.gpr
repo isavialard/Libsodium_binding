@@ -1,12 +1,13 @@
 project LibSodium is
     for Languages use ("Ada","C");
-    for Source_Dirs use ("common","libsodium_body/**","include/**");
+    for Source_Dirs use ("common","libsodium_body/**","include/**","test");
     for Object_Dir use "obj";
 
-   for Main use ("test.adb");
+   for Main use ("test_auth.adb");
 
    package Compiler is
-      for Switches ("ada") use ("-gnata", "-gnatwa", "-gnaty3M79SabCdefhiklnprstux");
+      for Switches ("ada") use ("-gnata", "-gnatwa", "-gnaty3M79SabCdefhiklnprstux", "-g", "-O0");
+      for Switches ("c") use ("-g", "-O0");
    end Compiler;
 
 end Libsodium;

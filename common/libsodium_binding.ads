@@ -2,8 +2,6 @@ pragma Ada_2012;
 pragma Style_Checks (Off);
 
 with Interfaces.C; use Interfaces.C;
-with Interfaces.C.Strings;
-with System;
 
 
 package Libsodium_Binding is
@@ -16,14 +14,16 @@ package Libsodium_Binding is
    type uint8 is mod 2 ** 8;
    type block64 is array (Natural range <>) of uint64;
    type Block8 is array (Natural range <>) of uint8;
+   type Block7 is array (Natural range <>) of uint8;
+   type String is array (Natural range <>) of Character;
 
 
 
 
    type crypto_secretstream_state is record
-      k     :  block8(1 .. 32);  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:57
-      nonce :  block8(1 .. 12);  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:58
-      u_pad :  block8(1 .. 8);  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:59
+      k     :  aliased block8(1 .. 32);  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:57
+      nonce :  aliased block8(1 .. 12);  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:58
+      u_pad :  aliased block8(1 .. 8);  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:59
    end record
      with Convention => C_Pass_By_Copy;  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:56
 
@@ -74,36 +74,28 @@ package Libsodium_Binding is
         External_Name => "sodium_unpad";
 
    --Randombytes
-   procedure randombytes_buf (buf : System.Address; size : uint64)  -- ./sodium/randombytes.h:35
+   procedure randombytes_buf (buf : out Block8; size : uint64)  -- ./sodium/randombytes.h:35
    with Import => True,
         Convention => C,
         External_Name => "randombytes_buf";
    procedure randombytes_buf_deterministic
-     (buf : System.Address;
+     (buf  : out Block8;
       size : uint64;
       seed : Block8)  -- ./sodium/randombytes.h:39
    with Import => True,
         Convention => C,
      External_Name => "randombytes_buf_deterministic";
-    function randombytes_random return uint32 -- ./sodium/randombytes.h:44
-   with Import => True,
-        Convention => C,
-        External_Name => "randombytes_random";
 
-   function randombytes_uniform (upper_bound :uint32) return uint32  -- ./sodium/randombytes.h:47
-   with Import => True,
-        Convention => C,
-        External_Name => "randombytes_uniform";
+   -- Constant time comparison
 
-   procedure randombytes_stir  -- ./sodium/randombytes.h:50
+   function sodium_memcmp
+     (b1_u : Block8;
+      b2_u : Block8;
+      len : uint64) return int  -- ./sodium/utils.h:34
    with Import => True,
         Convention => C,
-        External_Name => "randombytes_stir";
+     External_Name => "sodium_memcmp";
 
-   function randombytes_close return int  -- ./sodium/randombytes.h:53
-   with Import => True,
-        Convention => C,
-     External_Name => "randombytes_close";
 
    --Secret key
    --Authenticated Encryption
@@ -169,9 +161,9 @@ package Libsodium_Binding is
         External_Name => "crypto_secretstream_xchacha20poly1305_init_push";
 
    function crypto_secretstream_xchacha20poly1305_push
-     (state : out crypto_secretstream_state;
+     (state : in out crypto_secretstream_state;
       c : out Block8;
-      clen_p : Uint64;
+      clen_p : out Uint64;
       m : Block8;
       mlen : Uint64;
       ad : Block8;
@@ -190,9 +182,9 @@ package Libsodium_Binding is
         External_Name => "crypto_secretstream_xchacha20poly1305_init_pull";
 
    function crypto_secretstream_xchacha20poly1305_pull
-     (state : out crypto_secretstream_state;
+     (state : in out crypto_secretstream_state;
       m : out Block8;
-      mlen_p : Uint64;
+      mlen_p : out Uint64;
       tag_p : uint8;
       c : Block8;
       clen : Uint64;
@@ -409,7 +401,7 @@ package Libsodium_Binding is
         External_Name => "crypto_sign_update";
 
    function crypto_sign_final_create
-     (state : crypto_sign_state;
+     (state : in out crypto_sign_state;
       sig : out Block8;
       siglen_p : out Uint64;
       sk : Block8) return int  -- ./sodium/crypto_sign.h:93
@@ -418,7 +410,7 @@ package Libsodium_Binding is
         External_Name => "crypto_sign_final_create";
 
    function crypto_sign_final_verify
-     (state : crypto_sign_state;
+     (state : in out crypto_sign_state;
       sig : Block8;
       pk : Block8) return int  -- ./sodium/crypto_sign.h:99
    with Import => True,
@@ -479,7 +471,7 @@ package Libsodium_Binding is
         External_Name => "crypto_generichash_init";
 
    function crypto_generichash_update
-     (state : out crypto_generichash_state;
+     (state : in out crypto_generichash_state;
       c_in : Block8;
       inlen : Uint64) return int  -- ./sodium/crypto_generichash.h:66
    with Import => True,
@@ -487,8 +479,8 @@ package Libsodium_Binding is
         External_Name => "crypto_generichash_update";
 
    function crypto_generichash_final
-     (state : out crypto_generichash_state;
-      c_out : Block8;
+     (state : in out crypto_generichash_state;
+      c_out : out Block8;
       outlen : uint8) return int  -- ./sodium/crypto_generichash.h:72
    with Import => True,
         Convention => C,
@@ -527,7 +519,7 @@ package Libsodium_Binding is
     function crypto_pwhash
      (c_out : out Block8;
       outlen : Uint64;
-      passwd : Interfaces.C.Strings.chars_ptr;
+      passwd : String;
       passwdlen : Uint64;
       salt : Block8;
       opslimit : Uint64;
@@ -539,8 +531,8 @@ package Libsodium_Binding is
 
 
    function crypto_pwhash_str
-     (c_out : out Interfaces.C.Strings.chars_ptr;
-      passwd : Interfaces.C.Strings.chars_ptr;
+     (c_out : out String;
+      passwd : String;
       passwdlen : Uint64;
       opslimit : Uint64;
       memlimit : uint64) return int  -- ./sodium/crypto_pwhash.h:116
@@ -549,15 +541,15 @@ package Libsodium_Binding is
      External_Name => "crypto_pwhash_str";
 
    function crypto_pwhash_str_verify
-     (str : Interfaces.C.Strings.chars_ptr;
-      passwd : Interfaces.C.Strings.chars_ptr;
+     (str : String;
+      passwd : String;
       passwdlen : Uint64) return int  -- ./sodium/crypto_pwhash.h:128
    with Import => True,
         Convention => C,
         External_Name => "crypto_pwhash_str_verify";
 
    function crypto_pwhash_str_needs_rehash
-     (str : in out Interfaces.C.Strings.chars_ptr;
+     (str : in out String;
       opslimit : Uint64;
       memlimit : uint64) return int  -- ./sodium/crypto_pwhash.h:134
    with Import => True,
@@ -566,21 +558,21 @@ package Libsodium_Binding is
 
    --Key exchange
     function crypto_kx_seed_keypair
-     (pk : Block8;
-      sk : Block8;
+     (pk : out Block8;
+      sk : out Block8;
       seed : Block8) return int  -- ./sodium/crypto_kx.h:36
    with Import => True,
         Convention => C,
         External_Name => "crypto_kx_seed_keypair";
 
-   function crypto_kx_keypair (pk : Block8; sk : Block8) return int  -- ./sodium/crypto_kx.h:42
+   function crypto_kx_keypair (pk :out Block8; sk : out Block8) return int  -- ./sodium/crypto_kx.h:42
    with Import => True,
         Convention => C,
         External_Name => "crypto_kx_keypair";
 
    function crypto_kx_client_session_keys
-     (rx : Block8;
-      tx : Block8;
+     (rx : out Block8;
+      tx :out  Block8;
       client_pk : Block8;
       client_sk : Block8;
       server_pk : Block8) return int  -- ./sodium/crypto_kx.h:47
@@ -589,21 +581,13 @@ package Libsodium_Binding is
         External_Name => "crypto_kx_client_session_keys";
 
    function crypto_kx_server_session_keys
-     (rx : Block8;
-      tx : Block8;
+     (rx : out Block8;
+      tx : out Block8;
       server_pk : Block8;
       server_sk : Block8;
       client_pk : Block8) return int  -- ./sodium/crypto_kx.h:55
    with Import => True,
         Convention => C,
-        External_Name => "crypto_kx_server_session_keys";
-
-
-
-
-
-
-
-
+     External_Name => "crypto_kx_server_session_keys";
 
 end Libsodium_Binding;
