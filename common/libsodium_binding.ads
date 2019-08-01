@@ -8,17 +8,16 @@ package Libsodium_Binding is
 
    --Types
 
-
-   type uint64 is mod 2 ** 64;
+   MAX_BYTES : constant := 2147483647;
+   -- Unable to find the range limit defined in libsodium
+   -- MAX_BYTES arbitrarily fixed to max integer
+   type uint64 is range -2 ** 63 .. 2 ** 63 - 1;
    type uint32 is mod 2 ** 32;
    type uint8 is mod 2 ** 8;
-   type block64 is array (Natural range <>) of uint64;
-   type Block8 is array (Natural range <>) of uint8;
-   type Block7 is array (Natural range <>) of uint8;
-   type String is array (Natural range <>) of Character;
-
-
-
+   subtype Index is uint64 range 0 .. MAX_BYTES;
+   type block64 is array (Index range <>) of uint64;
+   type Block8 is array (Index range <>) of uint8;
+   type String is array (Index range <>) of Character;
 
    type crypto_secretstream_state is record
       k     :  aliased block8(1 .. 32);  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:57
@@ -43,6 +42,11 @@ package Libsodium_Binding is
       opaque :  block8(1 .. 384);  -- ./sodium/crypto_generichash_blake2b.h:24
    end record
      with Convention => C_Pass_By_Copy;  -- ./sodium/crypto_generichash_blake2b.h:23
+
+   function crypto_box_messagebytes_max return uint64  -- ./sodium/crypto_box.h:45
+   with Import => True,
+        Convention => C,
+        External_Name => "crypto_box_messagebytes_max";
 
 
 
@@ -77,7 +81,8 @@ package Libsodium_Binding is
    procedure randombytes_buf (buf : out Block8; size : uint64)  -- ./sodium/randombytes.h:35
    with Import => True,
         Convention => C,
-        External_Name => "randombytes_buf";
+     External_Name => "randombytes_buf";
+
    procedure randombytes_buf_deterministic
      (buf  : out Block8;
       size : uint64;
@@ -194,7 +199,7 @@ package Libsodium_Binding is
         Convention => C,
         External_Name => "crypto_secretstream_xchacha20poly1305_pull";
 
-   procedure crypto_secretstream_xchacha20poly1305_rekey (state : out crypto_secretstream_state)  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:101
+   procedure crypto_secretstream_xchacha20poly1305_rekey (state : in out crypto_secretstream_state)  -- ./sodium/crypto_secretstream_xchacha20poly1305.h:101
    with Import => True,
         Convention => C,
      External_Name => "crypto_secretstream_xchacha20poly1305_rekey";
@@ -589,5 +594,24 @@ package Libsodium_Binding is
    with Import => True,
         Convention => C,
      External_Name => "crypto_kx_server_session_keys";
+
+   --------------------
+   -- Key Derivation --
+   --------------------
+
+   function crypto_kdf_derive_from_key
+     (subkey : out Block8;
+      subkey_len : uint64;
+      subkey_id : uint64;
+      ctx : String;
+      key : Block8) return int  -- ./sodium/crypto_kdf.h:39
+   with Import => True,
+        Convention => C,
+        External_Name => "crypto_kdf_derive_from_key";
+
+   procedure crypto_kdf_keygen (k : out Block8)  -- ./sodium/crypto_kdf.h:46
+   with Import => True,
+        Convention => C,
+        External_Name => "crypto_kdf_keygen";
 
 end Libsodium_Binding;

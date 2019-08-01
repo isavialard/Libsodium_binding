@@ -2,805 +2,1176 @@
 <Locations >
   <Project>
     <vfs_file />
-    <file_marker column=" 4" line=" 23" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_secretstream.adb</vfs_file>
+      <vfs_file>/home/vialard/tweetnacl.gpr</vfs_file>
     </file_marker>
-    <file_marker column=" 26" line=" 102" >
+    <file_marker column=" 24" line=" 3" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 103" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 122" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 47" line=" 123" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 127" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 44" line=" 128" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 43" line=" 134" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 137" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 21" line=" 145" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 21" line=" 146" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 156" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 159" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 25" line=" 161" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 172" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 25" line=" 186" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 18" line=" 228" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 229" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 237" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 18" line=" 238" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 20" line=" 246" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 248" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 256" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 20" line=" 257" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 22" line=" 280" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 281" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 22" line=" 289" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 290" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 302" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 22" line=" 304" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 311" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 22" line=" 313" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 326" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 24" line=" 331" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 349" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 350" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 359" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 360" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 20" line=" 369" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 371" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 380" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 20" line=" 381" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 18" line=" 396" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 397" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 405" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 18" line=" 406" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 20" line=" 414" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 416" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 424" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 20" line=" 425" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 438" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 439" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 445" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 446" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 465" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 466" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 473" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 474" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 482" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 26" line=" 487" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 494" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 17" line=" 112" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 43" line=" 134" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 137" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 21" line=" 145" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 21" line=" 146" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 25" line=" 156" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 25" line=" 161" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 28" line=" 172" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 25" line=" 186" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 228" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 238" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 246" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 257" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 280" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 289" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 304" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 313" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 349" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 360" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 369" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 381" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 396" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 406" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 414" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 425" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 438" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 446" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 15" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 30" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 48" line=" 32" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 48" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 45" line=" 50" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 25" line=" 66" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 74" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 75" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 87" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 34" line=" 88" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 98" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 100" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 116" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 27" line=" 117" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 10" line=" 40" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 752" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 34" line=" 753" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 735" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 44" line=" 737" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 723" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 37" line=" 725" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 711" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 713" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 699" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 701" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 663" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 666" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 652" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 654" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 635" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 639" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 622" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 626" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 610" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 34" line=" 613" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 598" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 34" line=" 601" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 573" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 578" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 368" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 559" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 36" line=" 564" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 546" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 550" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 533" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 537" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 10" line=" 40" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 494" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 496" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 483" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 485" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 450" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 453" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 428" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 432" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 392" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 395" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 370" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 374" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 255" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 322" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 326" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 309" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 35" line=" 313" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 297" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 300" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 285" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 33" line=" 288" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 195" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 34" line=" 197" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 158" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 30" line=" 159" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 10" line=" 40" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 470" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+      <vfs_file>/home/vialard/tweetnacl.gpr</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnacl_interface.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/tweetnacl.gpr</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 591" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/test.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 591" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnaclhl.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 591" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnacl_h.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 591" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnaclhl.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 591" >
-      <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 10" >
+    <file_marker column=" 1" line=" 14" >
       <vfs_project />
       <vfs_file>/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_file>
     </file_marker>
-    <file_marker column=" 29" line=" 263" >
+    <file_marker column=" 8" line=" 132" >
       <vfs_project />
       <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 37" line=" 543" >
+    <file_marker column=" 51" line=" 5" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 43" line=" 552" >
+    <file_marker column=" 39" line=" 54" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 80" line=" 269" >
+    <file_marker column=" 31" line=" 18" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 30" line=" 26" >
+    <file_marker column=" 34" line=" 26" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_sign_multipart.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 17" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 26" >
       <vfs_project />
       <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_secretstream.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 26" line=" 18" >
+    <file_marker column=" 26" line=" 20" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box_shared_key.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 22" >
+    <file_marker column=" 7" line=" 174" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/libsodium_body/randombytes/randombytes.c</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 38" >
+    <file_marker column=" 24" line=" 46" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 20" line=" 21" >
+    <file_marker column=" 36" line=" 26" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_secretstream.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 38" >
+    <file_marker column=" 1" line=" 124" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 23" line=" 14" >
+    <file_marker column=" 4" line=" 59" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_auth.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 7" line=" 13" >
+    <file_marker column=" 4" line=" 61" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_shorthash.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 4" line=" 22" >
+    <file_marker column=" 1" line=" 62" >
       <vfs_project />
-      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 64" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 65" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 68" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 69" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 70" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 71" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 73" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 74" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 75" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 77" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 78" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 79" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 81" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 82" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 84" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 85" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 86" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 87" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 88" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 89" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 91" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 92" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 93" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 94" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 96" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 97" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 98" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 99" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 101" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 102" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 62" line=" 57" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 59" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 46" line=" 61" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 62" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 64" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 65" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 68" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 69" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 73" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 74" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 75" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 77" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 78" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 79" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 81" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 82" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 84" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 85" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 86" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 87" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 88" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 89" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 91" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 92" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 93" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 94" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 96" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 97" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 98" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 99" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 101" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 102" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 146" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 70" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 71" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 19" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 60" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 19" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 102" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 61" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 62" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 64" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 65" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 68" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 69" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 74" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 57" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 19" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 9" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 14" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 149" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 28" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 180" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 177" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 203" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 28" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 203" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 28" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 26" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 57" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 71" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 95" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 102" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 136" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 138" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 139" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 140" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 48" line=" 141" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 165" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 166" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 154" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 57" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 6" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 17" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_kdf.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 1012" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 18" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_kdf.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 19" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_kdf.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 21" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_kdf.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 23" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_kdf.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 19" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_kdf.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 636" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 650" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 656" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 663" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 23" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 24" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 25" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 27" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 28" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 29" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 36" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 44" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 64" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 88" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 92" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 94" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 324" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 326" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 327" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 329" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 46" line=" 63" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/libsodium_body/crypto_generichash/blake2b/ref/blake2.h</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 75" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/libsodium_body/crypto_hash/sha256/cp/hash_sha256_cp.c</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 76" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/libsodium_body/crypto_hash/sha256/cp/hash_sha256_cp.c</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 43" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/libsodium_body/crypto_kdf/blake2b/kdf_blake2b.c</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 458" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_secretstream.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 26" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_secretstream.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 450" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 169" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 30" line=" 17" >
+      <vfs_project />
+      <vfs_file>/home/vialard/Documents/git/Libsodium_binding/test/test_generichash_multipart.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >/home/vialard/tweetnacl.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 3">
+      <vfs_project  />
+      <vfs_file >/home/vialard/tweetnacl.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >/home/vialard/Documents/git/TweetNaCl_binding/tweetnacl.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >/home/vialard/Documents/git/TweetNaCl_binding/common/test.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnaclhl.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnacl_h.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >/home/vialard/Documents/git/TweetNaCl_binding/common/tweetnaclhl.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14">
+      <vfs_project  />
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 8" line=" 132">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 5">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 54">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 18">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 26">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_sign_multipart.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 17">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_box.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 26">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_secretstream.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 20">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_box_shared_key.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 174">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/libsodium_body/randombytes/randombytes.c</vfs_file>
+    </file_marker>
+    <file_marker column=" 24" line=" 46">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 26">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_secretstream.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 124">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 59">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 61">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 62">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 64">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 65">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 68">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 69">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 70">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 71">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 73">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 74">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 75">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 77">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 78">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 79">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 81">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 82">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 84">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 85">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 86">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 87">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 88">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 89">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 91">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 92">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 93">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 94">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 96">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 97">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 98">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 99">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 101">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 102">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 79" line=" 57">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 59">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 46" line=" 61">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 62">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 64">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 65">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 68">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 69">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 73">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 74">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 75">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 77">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 78">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 39" line=" 79">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 81">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 82">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 84">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 85">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 86">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 87">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 88">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 89">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 91">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 92">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 93">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 94">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 96">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 97">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 98">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 99">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 101">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 34" line=" 102">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 43" line=" 146">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 70">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 71">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 19">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 60">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 19">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 102">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_binding.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 59">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 61">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 62">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 64">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 65">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 68">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 69">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 74">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 76" line=" 57">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 19">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 9">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 14">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 149">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 28">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 53" line=" 180">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 177">
+      <vfs_project  />
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 203">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 28">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 203">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 28">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 26">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/test/test_padding.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 57">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 71">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 95">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 102">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 136">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 138">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 139">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 140">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 141">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 59" line=" 165">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 59" line=" 166">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 40" line=" 154">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 71" line=" 57">
+      <vfs_project >/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr</vfs_project>
+      <vfs_file >/home/vialard/Documents/git/Libsodium_binding/common/libsodium_interface.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

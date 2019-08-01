@@ -10,21 +10,27 @@ is
    -----------------------
    -- Constants & Types --
    -----------------------
-   Text_Max_Size : constant := 1000;
-   Padding_MAXBYTES : constant := 1000;
+   Padding_MAXBYTES : constant := MAX_BYTES;
+
    Randombytes_SEEDBYTES : constant := 32;
+
    Crypto_Generichash_BYTES         : constant := 32;
    Crypto_Generichash_KEYBYTES      : constant := 32;
+
    Crypto_Shorthash_BYTES    : constant := 8;
    Crypto_Shorthash_KEYBYTES : constant := 16;
+
    Crypto_Secretbox_KEYBYTES     : constant := 32;
    Crypto_Secretbox_NONCEBYTES   : constant := 24;
    Crypto_Secretbox_MACBYTES     : constant := 16;
+
    Crypto_Secretstream_ABYTES           : constant := 17;
    Crypto_Secretstream_HEADERBYTES      : constant := 24;
    Crypto_Secretstream_KEYBYTES         : constant := 32;
+
    Crypto_Auth_BYTES    : constant := 32;
    Crypto_Auth_KEYBYTES : constant := 32;
+
    Crypto_Box_SEEDBYTES      : constant := 32;
    Crypto_Box_PUBLICKEYBYTES : constant := 32;
    Crypto_Box_SECRETKEYBYTES : constant := 32;
@@ -33,10 +39,12 @@ is
    Crypto_Box_MACBYTES       : constant := 16;
    Crypto_Box_SEALBYTES : constant
      := Crypto_Box_PUBLICKEYBYTES + Crypto_Box_MACBYTES;
+
    Crypto_Sign_PUBLICKEYBYTES : constant := 32;
    Crypto_Sign_SECRETKEYBYTES : constant := 64;
    Crypto_Sign_BYTES          : constant := 64;
    Crypto_Sign_SEEDBYTES      : constant := 32;
+
    Crypto_Pwhash_ALG                  : constant := 1;
    Crypto_Pwhash_SALTBYTES            : constant := 16;
    Crypto_Pwhash_STRBYTES             : constant := 128;
@@ -51,57 +59,66 @@ is
    Crypto_Pwhash_MEMLIMIT_MODERATE    : constant := 134217728;
    Crypto_Pwhash_OPSLIMIT_SENSITIVE   : constant := 8;
    Crypto_Pwhash_MEMLIMIT_SENSITIVE   : constant := 536870912;
+
    Crypto_Kx_PUBLICKEYBYTES  : constant := 32;
    Crypto_Kx_SECRETKEYBYTES  : constant := 32;
    Crypto_Kx_SEEDBYTES       : constant := 32;
-   Crypto_Kx_SESSIONKEYBYTES : constant := 32;
+   Crypto_Kx_SESSIONKEYBYTES : constant uint64 := 32;
    Crypto_Kx_PRIMITIVE       : constant String := "x25519blake2b" & ASCII.NUL;
 
-   subtype Random_Seed is Block8 (1 .. Randombytes_SEEDBYTES);
+   Crypto_Kdf_BYTES_MIN    : constant := 16;
+   Crypto_Kdf_BYTES_MAX    : constant := 64;
+   Crypto_Kdf_CONTEXTBYTES : constant := 8;
+   Crypto_Kdf_KEYBYTES     : constant := 32;
 
-   subtype Generichash_Fingerprint is Block8 (1 .. Crypto_Generichash_BYTES);
-   subtype Generichash_Key is Block8 (1 .. Crypto_Generichash_KEYBYTES);
+   type Random_Seed is new Block8 (1 .. Randombytes_SEEDBYTES);
 
-   subtype Shorthash_Fingerprint is Block8 (1 .. Crypto_Shorthash_BYTES);
-   subtype Shorthash_Key is Block8 (1 .. Crypto_Shorthash_KEYBYTES);
+   type Generichash_Fingerprint is new Block8 (1 .. Crypto_Generichash_BYTES);
+   type Generichash_Key is new Block8 (1 .. Crypto_Generichash_KEYBYTES);
+
+   type Shorthash_Fingerprint is new Block8 (1 .. Crypto_Shorthash_BYTES);
+   type Shorthash_Key is new Block8 (1 .. Crypto_Shorthash_KEYBYTES);
 
    type Data_Sensitivity is (interactive, moderate, sensitive);
-   subtype Pwhash_Salt is Block8 (1 .. Crypto_Pwhash_SALTBYTES);
-   subtype Pwhash_Key is Block8;
-   subtype Password is Libsodium_Binding.String;
-   subtype Pwhash is Libsodium_Binding.String;
+   type Pwhash_Salt is new Block8 (1 .. Crypto_Pwhash_SALTBYTES);
+   type Pwhash_Key is new Block8;
+   type Password is new Libsodium_Binding.String;
+   type Pwhash is new Libsodium_Binding.String;
 
-   subtype Secretbox_Nonce is Block8 (1 .. Crypto_Secretbox_NONCEBYTES);
-   subtype Secretbox_Mac is Block8 (1 .. Crypto_Secretbox_MACBYTES);
-   subtype Secretbox_Key is Block8 (1 .. Crypto_Secretbox_KEYBYTES);
+   type Secretbox_Nonce is limited private;
+   type Secretbox_Mac is new Block8 (1 .. Crypto_Secretbox_MACBYTES);
+   type Secretbox_Key is new Block8 (1 .. Crypto_Secretbox_KEYBYTES);
 
-   subtype Header is Block8 (1 .. Crypto_Secretstream_HEADERBYTES);
-   subtype Additionnal_Info is Block8;
-   subtype Secretstream_Key is Block8 (1 .. Crypto_Secretstream_KEYBYTES);
+   type Header is new Block8 (1 .. Crypto_Secretstream_HEADERBYTES);
+   type Additionnal_Info is new Block8;
+   Null_AD :  constant Additionnal_Info (1 .. 0) := (others => 0);
+   type Secretstream_Key is new Block8 (1 .. Crypto_Secretstream_KEYBYTES);
 
-   subtype Auth_Mac is Block8 (1 .. Crypto_Auth_BYTES);
-   subtype Auth_Key is Block8 (1 .. Crypto_Auth_KEYBYTES);
+   type Auth_Mac is new Block8 (1 .. Crypto_Auth_BYTES);
+   type Auth_Key is new Block8 (1 .. Crypto_Auth_KEYBYTES);
 
-   subtype Box_Mac is Block8 (1 .. Crypto_Box_MACBYTES);
-   subtype Box_Secret_Key is Block8 (1 .. Crypto_Box_SECRETKEYBYTES);
-   subtype Box_Public_Key is Block8 (1 .. Crypto_Box_PUBLICKEYBYTES);
-   subtype Box_Key_Seed is Block8 (1 .. Crypto_Box_SEEDBYTES);
-   subtype Box_Shared_Key is Block8 (1 .. Crypto_Box_BEFORENMBYTES);
-   subtype Box_Nonce is Block8 (1 .. Crypto_Box_NONCEBYTES);
+   type Box_Mac is new Block8 (1 .. Crypto_Box_MACBYTES);
+   type Box_Secret_Key is new Block8 (1 .. Crypto_Box_SECRETKEYBYTES);
+   type Box_Public_Key is new Block8 (1 .. Crypto_Box_PUBLICKEYBYTES);
+   type Box_Key_Seed is new Block8 (1 .. Crypto_Box_SEEDBYTES);
+   type Box_Shared_Key is new Block8 (1 .. Crypto_Box_BEFORENMBYTES);
+   type Box_Nonce is limited private;
 
-   subtype Sign_Secret_Key is Block8 (1 .. Crypto_Sign_SECRETKEYBYTES);
-   subtype Sign_Public_Key is Block8 (1 .. Crypto_Sign_PUBLICKEYBYTES);
-   subtype Sign_Key_Seed is Block8 (1 .. Crypto_Sign_SEEDBYTES);
-   subtype Signature is Block8 (1 .. Crypto_Sign_BYTES);
+   type Sign_Secret_Key is new Block8 (1 .. Crypto_Sign_SECRETKEYBYTES);
+   type Sign_Public_Key is new Block8 (1 .. Crypto_Sign_PUBLICKEYBYTES);
+   type Sign_Key_Seed is new Block8 (1 .. Crypto_Sign_SEEDBYTES);
+   type Signature is new Block8 (1 .. Crypto_Sign_BYTES);
 
-   subtype Kx_Secret_Key is Block8 (1 .. Crypto_Kx_SECRETKEYBYTES);
-   subtype Kx_Public_Key is Block8 (1 .. Crypto_Kx_PUBLICKEYBYTES);
-   subtype Kx_Key_Seed is Block8 (1 .. Crypto_Kx_SEEDBYTES);
-   subtype Kx_Session_Key is Block8 (1 .. Crypto_Kx_SESSIONKEYBYTES);
+   type Kx_Secret_Key is new Block8 (1 .. Crypto_Kx_SECRETKEYBYTES);
+   type Kx_Public_Key is new Block8 (1 .. Crypto_Kx_PUBLICKEYBYTES);
+   type Kx_Key_Seed is new Block8 (1 .. Crypto_Kx_SEEDBYTES);
+   type Kx_Session_Key is new Block8 (1 .. Crypto_Kx_SESSIONKEYBYTES);
 
-   subtype Plain_Text is Block8;
-   subtype Cipher_Text is Block8;
+   type Plain_Text is new Block8;
+   type Cipher_Text is new Block8;
 
+   type Kdf_Key is new Block8 (1 .. Crypto_Kdf_KEYBYTES);
+   type Kdf_Context is new Libsodium_Binding.String (1 .. Crypto_Kdf_CONTEXTBYTES);
    ----------
    -- Init --
    ----------
@@ -113,25 +130,63 @@ is
    -------------
    function Sodium_Pad_Length
      (Buflen    : in uint64;
-      Blocksize : in uint64) return Integer
-     with Pre => Buflen + Blocksize < Padding_MAXBYTES,
-     Post => uint64 (Sodium_Pad_Length'Result) + Blocksize
-     < Padding_MAXBYTES;
+      Blocksize : in uint64) return uint64
+     with
+       Pre => Buflen > 0
+       and then Blocksize > 0
+       and then Blocksize <= 512
+       and then Buflen + Blocksize < Padding_MAXBYTES,
+       Post => Sodium_Pad_Length'Result < Padding_MAXBYTES;
 
-   function Sodium_Pad
-     (Buf       : in Plain_Text;
-      Blocksize : in uint64) return Plain_Text
-     with Pre => Buf'Length + Blocksize < Padding_MAXBYTES;
+   function Sodium_Unpad_Length
+     (Buf    : in Plain_Text) return uint64
+     with
+       Pre => Buf'Length < Padding_MAXBYTES,
+       Post => Sodium_Unpad_Length'Result < MAX_BYTES;
 
-   function Sodium_Unpad
-     (Buf       : Plain_Text;
-      Blocksize : uint64) return Plain_Text;
+   procedure Sodium_Pad
+     (Padded_Buf :    out Plain_Text;
+      Buf        : in     Plain_Text;
+      Blocksize  : in     uint64)
+     with
+       Pre => Blocksize <= 512
+       and then Blocksize > 0
+       and then Buf'Length > 0
+       and then Buf'Length + Blocksize < Padding_MAXBYTES
+       and then Padded_Buf'Length = Sodium_Pad_Length (Buf'Length, Blocksize),
+       Post => Buf'Length = Sodium_Unpad_Length (Padded_Buf);
+
+   procedure Sodium_Unpad
+     (Buf        :    out Plain_Text;
+      Padded_Buf : in     Plain_Text;
+      Blocksize  : in     uint64)
+     with
+       Pre => Blocksize <= 512
+       and then Blocksize > 0
+       and then Padded_Buf'Length < Padding_MAXBYTES
+       and then Buf'Length = Sodium_Unpad_Length (Padded_Buf);
 
    ------------
    -- Random --
    ------------
 
    procedure Randombytes (Buf : out Block8);
+
+   procedure Randombytes (Buf : out Plain_Text)
+     with
+       Post => Is_Signed (Buf);
+
+   procedure Randombytes (Buf : out Box_Nonce)
+     with
+   Post => Never_Used_Yet(Buf);
+
+   procedure Randombytes (Buf : out Secretbox_Nonce)
+     with
+   Post => Never_Used_Yet(Buf);
+
+   procedure Randombytes (Buf : out Random_Seed);
+
+   procedure Randombytes (Buf : out Pwhash_Salt);
 
    procedure Randombytes_Seed
      (Buf  :    out Block8;
@@ -227,11 +282,11 @@ is
    procedure Crypto_Secretbox_Easy
      (C :    out Cipher_Text;
       M : in     Plain_Text;
-      N : in     Secretbox_Nonce;
+      N : in out Secretbox_Nonce;
       K : in     Secretbox_Key)
      with
        Pre => C'Length = M'Length + Crypto_Secretbox_MACBYTES
-       and then Is_Signed (M);
+       and then Never_Used_Yet (N);
 
    procedure Crypto_Secretbox_Open_Easy
      (M :    out Plain_Text;
@@ -239,18 +294,17 @@ is
       N : in     Secretbox_Nonce;
       K : in     Secretbox_Key)
      with
-       Pre => C'Length = M'Length + Crypto_Secretbox_MACBYTES,
-       Post => Is_Signed (M);
+       Pre => C'Length = M'Length + Crypto_Secretbox_MACBYTES;
 
    procedure Crypto_Secretbox_Detached
      (C   :    out Cipher_Text;
       Mac :    out Secretbox_Mac;
       M   : in     Plain_Text;
-      N   : in     Secretbox_Nonce;
+      N   : in out Secretbox_Nonce;
       K   : in     Secretbox_Key)
      with
        Pre => C'Length = M'Length
-       and then Is_Signed (M);
+       and then Never_Used_Yet (N);
 
    procedure Crypto_Secretbox_Open_Detached
      (M   :    out Plain_Text;
@@ -279,18 +333,11 @@ is
      (State : in out crypto_secretstream_state;
       C     :    out Cipher_Text;
       M     : in     Plain_Text;
-      AD    : in     Additionnal_Info;
-      Tag   : in     uint8)
+      Tag   : in     uint8;
+      AD    : in     Additionnal_Info := Null_AD)
      with
        Pre => C'Length = M'Length + Crypto_Secretstream_ABYTES;
 
-   procedure Crypto_Secretstream_Adless_Push
-     (State : in out crypto_secretstream_state;
-      C     :    out Cipher_Text;
-      M     : in     Plain_Text;
-      Tag   : in     uint8)
-     with
-       Pre => C'Length = M'Length + Crypto_Secretstream_ABYTES;
 
    procedure Crypto_Secretstream_Init_Pull
      (State  :    out crypto_secretstream_state;
@@ -302,15 +349,7 @@ is
       M     :    out Plain_Text;
       Tag   : in     uint8;
       C     : in     Cipher_Text;
-      AD    : in     Additionnal_Info)
-     with
-       Pre => C'Length = M'Length + Crypto_Secretstream_ABYTES;
-
-   procedure Crypto_Secretstream_Adless_Pull
-     (State : in out crypto_secretstream_state;
-      M     :    out Plain_Text;
-      Tag   : in     uint8;
-      C     : in     Cipher_Text)
+      AD    : in     Additionnal_Info := Null_AD)
      with
        Pre => C'Length = M'Length + Crypto_Secretstream_ABYTES;
 
@@ -348,12 +387,13 @@ is
    procedure Crypto_Box_Easy
      (C  :    out Cipher_Text;
       M  : in     Plain_Text;
-      N  : in     Box_Nonce;
+      N  : in out Box_Nonce;
       PK : in     Box_Public_Key;
       SK : in     Box_Secret_Key)
      with
        Pre => C'Length = M'Length + Crypto_Box_MACBYTES
-       and then Is_Signed (M);
+       and then Is_Signed (M)
+       and then Never_Used_Yet (N);
 
    procedure Crypto_Box_Open_Easy
      (M  :    out Plain_Text;
@@ -369,11 +409,12 @@ is
      (C   :    out Cipher_Text;
       Mac :    out Box_Mac;
       M   : in     Plain_Text;
-      N   : in     Box_Nonce;
+      N   : in out Box_Nonce;
       PK  : in     Box_Public_Key;
       SK  : in     Box_Secret_Key)
      with
        Pre => C'Length = M'Length
+       and then Never_Used_Yet (N)
        and then Is_Signed (M);
 
    procedure Crypto_Box_Open_Detached
@@ -382,23 +423,24 @@ is
       Mac : in     Box_Mac;
       N   : in     Box_Nonce;
       PK  : in     Box_Public_Key;
-      SK  : in     Box_Public_Key)
+      SK  : in     Box_Secret_Key)
      with
        Pre => C'Length = M'Length,
        Post => Is_Signed (M);
 
    procedure Crypto_Box_Beforenm
      (K  :    out Box_Shared_Key;
-      PK : in     Box_Secret_Key;
+      PK : in     Box_Public_Key;
       SK : in     Box_Secret_Key);
 
    procedure Crypto_Box_Easy_Afternm
      (C :    out Cipher_Text;
       M : in     Plain_Text;
-      N : in     Box_Nonce;
+      N : in out Box_Nonce;
       K : in     Box_Shared_Key)
      with
        Pre => C'Length = M'Length + Crypto_Box_MACBYTES
+       and then Never_Used_Yet (N)
        and then Is_Signed (M);
 
    procedure Crypto_Box_Open_Easy_Afternm
@@ -414,10 +456,11 @@ is
      (C   :    out Cipher_Text;
       Mac :    out Box_Mac;
       M   : in     Plain_Text;
-      N   : in     Box_Nonce;
+      N   : in out Box_Nonce;
       K   : in     Box_Shared_Key)
      with
        Pre => C'Length = M'Length
+       and then Never_Used_Yet (N)
        and then Is_Signed (M);
 
    procedure Crypto_Box_Open_Detached_Afternm
@@ -535,21 +578,42 @@ is
       Server_SK : in     Kx_Secret_Key;
       Client_PK : in     Kx_Public_Key);
 
+   --------------------
+   -- Key Derivation --
+   --------------------
+
+   procedure Crypto_Kdf_Derive_From_Key
+     (Subkey  :    out Block8;
+      ID      : in     uint64;
+      Context : in     Kdf_Context := "Context ";
+      Key     : in     Kdf_Key)
+     with
+       Pre => Subkey'Length >= Crypto_Kdf_BYTES_MIN
+       and then Subkey'Length <= Crypto_Kdf_BYTES_MAX;
+
+   procedure Crypto_Kdf_Key (K : out Kdf_Key);
+
    ---------------------
    -- Ghost functions --
    ---------------------
 
-   function Is_Signed          (M : Plain_Text) return Boolean with Ghost;
-   function Never_Used_Yet     (N : Block8)      return Boolean with Ghost;
+   function Is_Signed          (M : Plain_Text)      return Boolean with Ghost;
+   function Never_Used_Yet     (N : Box_Nonce)       return Boolean with Ghost;
+   function Never_Used_Yet     (N : Secretbox_Nonce) return Boolean with Ghost;
 
 private
    pragma SPARK_Mode (Off);
 
+   type Box_Nonce is new Block8 (1 .. Crypto_Box_NONCEBYTES);
+   type Secretbox_Nonce is new Block8 (1 .. Crypto_Secretbox_NONCEBYTES);
+
    --  Properties are intentionally hidden from SPARK analysis under SPARK_Mode
    --  Off. This ensures that proof considers them as black boxes.
 
-   function Is_Signed          (M : Plain_Text) return Boolean is (True);
-   function Never_Used_Yet     (N : Block8)      return Boolean is (True);
+   function Is_Signed          (M : Plain_Text)      return Boolean is (True);
+   function Never_Used_Yet     (N : Box_Nonce)       return Boolean is (True);
+   function Never_Used_Yet     (N : Secretbox_Nonce) return Boolean is (True);
+
 
 
 end Libsodium_Interface;
