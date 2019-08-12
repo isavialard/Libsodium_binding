@@ -1,0 +1,81 @@
+V "GNAT Lib v2019"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test_generichash_multipart%b  tc_test_generichash_multipart.adb  85bcc725 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W libsodium_binding%s	libsodium_binding.ads	libsodium_binding.ali
+W libsodium_interface%s	libsodium_interface.adb	libsodium_interface.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D libsodium_binding.ads	20190731120158 72a4033a libsodium_binding%s
+D libsodium_interface.ads  20190808103816 b75f7039 libsodium_interface%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D tc_test_generichash_multipart.adb  20190812102946 eeb3614b test_generichash_multipart%b
+G a e
+G c Z b b [test_generichash_multipart standard 7 11 none]
+G r c none [test_generichash_multipart standard 7 11 none] [randombytes libsodium_interface 173 14 none]
+G r c none [test_generichash_multipart standard 7 11 none] [crypto_generichash_init_keyless libsodium_interface 222 14 none]
+G r c none [test_generichash_multipart standard 7 11 none] [crypto_generichash_update libsodium_interface 225 14 none]
+G r c none [test_generichash_multipart standard 7 11 none] [crypto_generichash_final libsodium_interface 229 14 none]
+G r c none [test_generichash_multipart standard 7 11 none] [crypto_generichash_key libsodium_interface 233 14 none]
+G r c none [test_generichash_multipart standard 7 11 none] [crypto_generichash_init libsodium_interface 218 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 26|3r6 3r24
+X 6 a-textio.ads
+57K13*Text_IO 727e16 26|3w10 3r28
+508U14*Put_Line 26|23s4
+X 11 libsodium_binding.ads
+7K9*Libsodium_Binding 617e22 26|4w6 4r29
+16M9*uint8
+19A9*Block8(16M9)<14I9> 26|8r8
+41R9*crypto_generichash_state 44e6 26|12r12 13r20
+X 12 libsodium_interface.ads
+5K9*Libsodium_Interface 619e24 26|5w6 5r31
+76A9*Generichash_Fingerprint<11|19A9>(11|16M9)<11|14I9> 26|9r9 10r17
+77A9*Generichash_Key<11|19A9>(11|16M9)<11|14I9> 26|11r8
+173U14*Randombytes 26|15s4
+218U14*Crypto_Generichash_Init 26|20s4
+222U14*Crypto_Generichash_Init_Keyless 26|16s4
+225U14*Crypto_Generichash_Update 26|17s4 21s4
+229U14*Crypto_Generichash_Final 26|18s4 22s4
+233U14*Crypto_Generichash_Key 26|19s4
+X 26 tc_test_generichash_multipart.adb
+7U11*Test_Generichash_multipart 7b11 25l5 25t31
+8a4 M{11|19A9} 15m17 17r46 21r38
+9a4 FP{12|76A9} 22m37
+10a4 FP_Keyless{12|76A9} 18m45
+11a4 K{12|77A9} 19m28 20r36
+12r4 State{11|41R9} 20m29 21m31 21r31 22m30 22r30
+13r4 State_Keyless{11|41R9} 16m37 17m31 17r31 18m30 18r30
+
