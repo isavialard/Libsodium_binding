@@ -1,0 +1,25 @@
+[GENERATED OBJECT FILE]
+b__tc_test_box_seal.o
+[PROJECT FILES]
+/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_box_seal/tc.gpr
+20190812101812
+/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr
+20190812105155
+[BOUND OBJECT FILES]
+/home/vialard/Documents/git/Libsodium_binding/obj/libsodium_binding.o
+/home/vialard/Documents/git/Libsodium_binding/obj/libsodium_interface.o
+/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_box_seal/obj/tc_test_box_seal.o
+[GENERATED SOURCE FILES]
+b__tc_test_box_seal.ads
+b__tc_test_box_seal.adb
+b__tc_test_box_seal.ali
+[RESULTING OPTIONS]
+-L/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_box_seal/obj/
+-L/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_box_seal/obj/
+-L/home/vialard/Documents/git/Libsodium_binding/testsuite/utils/obj/
+-L/home/vialard/Documents/git/Libsodium_binding/obj/
+-L/home/vialard/opt/GNAT/2019/lib/gcc/x86_64-pc-linux-gnu/8.3.1/adalib/
+-static
+-static-libgcc
+/home/vialard/opt/GNAT/2019/lib/gcc/x86_64-pc-linux-gnu/8.3.1/adalib/libgnat.a
+-ldl

@@ -1,0 +1,25 @@
+[GENERATED OBJECT FILE]
+b__tc_test_generichash.o
+[PROJECT FILES]
+/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_generichash/tc.gpr
+20190812102319
+/home/vialard/Documents/git/Libsodium_binding/libsodium.gpr
+20190812105155
+[BOUND OBJECT FILES]
+/home/vialard/Documents/git/Libsodium_binding/obj/libsodium_binding.o
+/home/vialard/Documents/git/Libsodium_binding/obj/libsodium_interface.o
+/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_generichash/obj/tc_test_generichash.o
+[GENERATED SOURCE FILES]
+b__tc_test_generichash.ads
+b__tc_test_generichash.adb
+b__tc_test_generichash.ali
+[RESULTING OPTIONS]
+-L/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_generichash/obj/
+-L/home/vialard/Documents/git/Libsodium_binding/testsuite/tests/test_generichash/obj/
+-L/home/vialard/Documents/git/Libsodium_binding/testsuite/utils/obj/
+-L/home/vialard/Documents/git/Libsodium_binding/obj/
+-L/home/vialard/opt/GNAT/2019/lib/gcc/x86_64-pc-linux-gnu/8.3.1/adalib/
+-static
+-static-libgcc
+/home/vialard/opt/GNAT/2019/lib/gcc/x86_64-pc-linux-gnu/8.3.1/adalib/libgnat.a
+-ldl

@@ -1,0 +1,82 @@
+V "GNAT Lib v2019"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test_box_seal%b	tc_test_box_seal.adb	661fa7e6 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W libsodium_binding%s	libsodium_binding.ads	libsodium_binding.ali
+W libsodium_interface%s	libsodium_interface.adb	libsodium_interface.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-except.ads		20190518041255 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041254 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041255 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041256 491b781d ada.tags%s
+D a-textio.ads		20190518041256 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D i-cstrea.ads		20190518041254 e53d8b8e interfaces.c_streams%s
+D libsodium_binding.ads	20190731120158 72a4033a libsodium_binding%s
+D libsodium_interface.ads  20190808103816 b75f7039 libsodium_interface%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-crtl.ads		20190518041254 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041256 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-secsta.ads		20190518041256 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041255 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041256 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041256 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041254 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041255 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041255 1b7d22d2 system.wch_con%s
+D tc_test_box_seal.adb	20190812102010 0d100188 test_box_seal%b
+G a e
+G c Z b b [test_box_seal standard 7 11 none]
+G r c none [test_box_seal standard 7 11 none] [randombytes libsodium_interface 175 14 none]
+G r c none [test_box_seal standard 7 11 none] [crypto_box_keypair libsodium_interface 384 14 none]
+G r c none [test_box_seal standard 7 11 none] [crypto_box_seal libsodium_interface 480 14 none]
+G r c none [test_box_seal standard 7 11 none] [crypto_box_seal_open libsodium_interface 487 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 26|3r6 3r24
+X 6 a-textio.ads
+57K13*Text_IO 727e16 26|3w10 3r28
+508U14*Put_Line 26|23s4
+X 11 libsodium_binding.ads
+7K9*Libsodium_Binding 617e22 26|4w6 4r29
+16M9*uint8
+19A9*Block8(16M9)<14I9>
+X 12 libsodium_interface.ads
+5K9*Libsodium_Interface 619e24 26|5w6 5r31
+8X4*Crypto_Error 26|20r40
+101A9*Box_Secret_Key<11|19A9>(11|16M9)<11|14I9> 26|11r9
+102A9*Box_Public_Key<11|19A9>(11|16M9)<11|14I9> 26|10r9
+117A9*Plain_Text<11|19A9>(11|16M9)<11|14I9> 26|8r8 12r14
+118A9*Cipher_Text<11|19A9>(11|16M9)<11|14I9> 26|9r8
+175U14*Randombytes 26|15s4
+384U14*Crypto_Box_Keypair 26|16s4
+480U14*Crypto_Box_Seal 26|17s4
+487U14*Crypto_Box_Seal_Open 26|18s4
+X 26 tc_test_box_seal.adb
+7U11*Test_Box_Seal 7b11 25l5 25t18
+8a4 M{12|117A9} 9r21 9r32 12r26 12r37 15m17 17r24 19r13 19r24 20r10
+9a4 C{12|118A9} 17m21 18r35
+10a4 PK{12|102A9} 16m24 17r27 18r38
+11a4 SK{12|101A9} 16m28 18r42
+12a4 M_Final{12|117A9} 18m26 20r18
+19i8 I<long_integer> 20r12 20r26
+
