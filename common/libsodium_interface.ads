@@ -63,7 +63,7 @@ is
    Crypto_Kx_PUBLICKEYBYTES  : constant := 32;
    Crypto_Kx_SECRETKEYBYTES  : constant := 32;
    Crypto_Kx_SEEDBYTES       : constant := 32;
-   Crypto_Kx_SESSIONKEYBYTES : constant uint64 := 32;
+   Crypto_Kx_SESSIONKEYBYTES : constant := 32;
    Crypto_Kx_PRIMITIVE       : constant String := "x25519blake2b" & ASCII.NUL;
 
    Crypto_Kdf_BYTES_MIN    : constant := 16;
@@ -112,7 +112,7 @@ is
    type Kx_Secret_Key is new Block8 (1 .. Crypto_Kx_SECRETKEYBYTES);
    type Kx_Public_Key is new Block8 (1 .. Crypto_Kx_PUBLICKEYBYTES);
    type Kx_Key_Seed is new Block8 (1 .. Crypto_Kx_SEEDBYTES);
-   type Kx_Session_Key is new Block8 (1 .. Crypto_Kx_SESSIONKEYBYTES);
+   subtype Kx_Session_Key is Secretbox_Key;
 
    type Plain_Text is new Block8;
    type Cipher_Text is new Block8;
@@ -135,7 +135,7 @@ is
        Pre => Buflen > 0
        and then Blocksize > 0
        and then Blocksize <= 512
-       and then Buflen + Blocksize < Padding_MAXBYTES,
+       and then Buflen < Padding_MAXBYTES - Blocksize,
        Post => Sodium_Pad_Length'Result < Padding_MAXBYTES;
 
    function Sodium_Unpad_Length
@@ -172,9 +172,9 @@ is
 
    procedure Randombytes (Buf : out Block8);
 
-   procedure Randombytes (Buf : out Plain_Text)
-     with
-       Post => Is_Signed (Buf);
+   procedure Randombytes (Buf : out Plain_Text);
+     --with
+       --Post => Is_Signed (Buf);
 
    procedure Randombytes (Buf : out Box_Nonce)
      with
