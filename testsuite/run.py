@@ -96,10 +96,10 @@ class Testcase:
         # Get the expected output
         with open(expected_output_fn, 'r') as f:
             expected_output = f.read()
-            try:
-                expected_output = expected_output.decode('ascii')
-            except UnicodeError:
-                return 'Expected output is not ASCII'
+            #try:
+                #expected_output = expected_output.decode('ascii')
+            #except UnicodeError:
+             #   return 'Expected output is not ASCII'
             expected_output = expected_output.splitlines()
 
         # Run the program, get its output
@@ -115,7 +115,7 @@ class Testcase:
         if returncode or stderr:
             return program_returned_msg
         elif args.verbose:
-            print program_returned_msg
+            print (program_returned_msg)#ajout parenthèses
 
         stdout = stdout.splitlines()
 
@@ -130,7 +130,7 @@ class Testcase:
                 )
             ))
         elif args.verbose:
-            print "\n".join(stdout)
+            print ("\n".join(stdout))#ajout parenthèses
 
 
 def find_testcases():

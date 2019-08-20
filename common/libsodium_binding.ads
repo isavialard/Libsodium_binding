@@ -12,11 +12,10 @@ package Libsodium_Binding is
    -- Unable to find the range limit defined in libsodium
    -- MAX_BYTES arbitrarily fixed to max integer
    type uint64 is range -2 ** 63 .. 2 ** 63 - 1;
-   type uint32 is mod 2 ** 32;
    type uint8 is mod 2 ** 8;
    subtype Index is uint64 range 0 .. MAX_BYTES;
-   type block64 is array (Index range <>) of uint64;
    type Block8 is array (Index range <>) of uint8;
+   type Block64 is array (Index range <>) of uint64;
    type String is array (Index range <>) of Character;
 
    type crypto_secretstream_state is record

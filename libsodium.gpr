@@ -3,11 +3,16 @@ project LibSodium is
     for Source_Dirs use ("common","libsodium_body/**","include/**","test","examples");
     for Object_Dir use "obj";
 
-   for Main use ("test_box.adb");
+   for Main use ("nonce_used_twice_example.adb");
 
    package Compiler is
-      --for Switches ("ada") use ("-gnata", "-gnatwa", "-gnaty3M79SabCdefhiklnprstux", "-g", "-O0");
+      for Switches ("ada") use ("-gnata", "-gnatwa", "-gnaty3M79SabCdefhiklnprstux", "-g", "-O0");
       for Switches ("c") use ("-g", "-O0");
    end Compiler;
+
+   package builder is
+      for Switches ("ada")  use ("-g");
+   end builder;
+
 
 end Libsodium;
