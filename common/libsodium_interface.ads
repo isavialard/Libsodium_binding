@@ -118,7 +118,8 @@ is
    type Cipher_Text is new Block8;
 
    type Kdf_Key is new Block8 (1 .. Crypto_Kdf_KEYBYTES);
-   type Kdf_Context is new Libsodium_Binding.String (1 .. Crypto_Kdf_CONTEXTBYTES);
+   type Kdf_Context is new Libsodium_Binding.String (1 ..
+                                                      Crypto_Kdf_CONTEXTBYTES);
    ----------
    -- Init --
    ----------
@@ -173,16 +174,16 @@ is
    procedure Randombytes (Buf : out Block8);
 
    procedure Randombytes (Buf : out Plain_Text);
-     --with
-       --Post => Is_Signed (Buf);
+   -- with
+   -- Post => Is_Signed (Buf);
 
    procedure Randombytes (Buf : out Box_Nonce)
      with
-   Post => Never_Used_Yet(Buf);
+   Post => Never_Used_Yet (Buf);
 
    procedure Randombytes (Buf : out Secretbox_Nonce)
      with
-   Post => Never_Used_Yet(Buf);
+   Post => Never_Used_Yet (Buf);
 
    procedure Randombytes (Buf : out Random_Seed);
 
@@ -320,8 +321,7 @@ is
 
    -------------------
    -- Secret stream --
-   ------------------- No idea if I should put Is_Signed on this one. Is each part signed, or is it the message as a whole. MB put only condition in Post
-
+   -------------------
    procedure Crypto_Secretstream_Key (K : out Secretstream_Key);
 
    procedure Crypto_Secretstream_Init_Push
@@ -337,7 +337,6 @@ is
       AD    : in     Additionnal_Info := Null_AD)
      with
        Pre => C'Length = M'Length + Crypto_Secretstream_ABYTES;
-
 
    procedure Crypto_Secretstream_Init_Pull
      (State  :    out crypto_secretstream_state;
@@ -613,7 +612,5 @@ private
    function Is_Signed          (M : Plain_Text)      return Boolean is (True);
    function Never_Used_Yet     (N : Box_Nonce)       return Boolean is (True);
    function Never_Used_Yet     (N : Secretbox_Nonce) return Boolean is (True);
-
-
 
 end Libsodium_Interface;

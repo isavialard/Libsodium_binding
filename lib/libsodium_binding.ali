@@ -1,0 +1,484 @@
+V "GNAT Lib v2019"
+A -O0
+A -gnatA
+A -gnata
+A -gnatwa
+A -gnaty3
+A -gnatyM79
+A -gnatyS
+A -gnatya
+A -gnatyb
+A -gnatyC
+A -gnatyd
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatyp
+A -gnatyr
+A -gnatys
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U libsodium_binding%s	libsodium_binding.ads	f52ae1f3 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+
+D ada.ads		20190518041255 76789da1 ada%s
+D a-unccon.ads		20190518041255 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041254 5ab55268 interfaces%s
+D i-c.ads		20190518041254 5421119b interfaces.c%s
+D libsodium_binding.ads	20190819133254 a10bf068 libsodium_binding%s
+D system.ads		20190518041255 4635ec04 system%s
+D s-exctab.ads		20190518041255 54135002 system.exception_table%s
+D s-parame.ads		20190518041256 48ec542b system.parameters%s
+D s-stalib.ads		20190518041256 09bd3940 system.standard_library%s
+G a e
+G c Z s s [crypto_box_messagebytes_max libsodium_binding 45 13 none]
+G c Z s s [sodium_init libsodium_binding 54 13 none]
+G c Z s s [sodium_pad libsodium_binding 60 13 none]
+G c Z s s [sodium_unpad libsodium_binding 70 13 none]
+G c Z s s [randombytes_buf libsodium_binding 80 14 none]
+G c Z s s [randombytes_buf_deterministic libsodium_binding 85 14 none]
+G c Z s s [sodium_memcmp libsodium_binding 95 13 none]
+G c Z s s [crypto_secretbox_easy libsodium_binding 106 13 none]
+G c Z s s [crypto_secretbox_open_easy libsodium_binding 116 13 none]
+G c Z s s [crypto_secretbox_detached libsodium_binding 126 13 none]
+G c Z s s [crypto_secretbox_open_detached libsodium_binding 137 13 none]
+G c Z s s [crypto_secretbox_keygen libsodium_binding 148 14 none]
+G c Z s s [crypto_secretstream_xchacha20poly1305_keygen libsodium_binding 154 14 none]
+G c Z s s [crypto_secretstream_xchacha20poly1305_init_push libsodium_binding 159 13 none]
+G c Z s s [crypto_secretstream_xchacha20poly1305_push libsodium_binding 167 13 none]
+G c Z s s [crypto_secretstream_xchacha20poly1305_init_pull libsodium_binding 180 13 none]
+G c Z s s [crypto_secretstream_xchacha20poly1305_pull libsodium_binding 188 13 none]
+G c Z s s [crypto_secretstream_xchacha20poly1305_rekey libsodium_binding 201 14 none]
+G c Z s s [crypto_auth libsodium_binding 207 13 none]
+G c Z s s [crypto_auth_verify libsodium_binding 216 13 none]
+G c Z s s [crypto_auth_keygen libsodium_binding 225 14 none]
+G c Z s s [crypto_box_seed_keypair libsodium_binding 232 13 none]
+G c Z s s [crypto_box_keypair libsodium_binding 240 13 none]
+G c Z s s [crypto_box_easy libsodium_binding 245 13 none]
+G c Z s s [crypto_box_open_easy libsodium_binding 256 13 none]
+G c Z s s [crypto_box_detached libsodium_binding 267 13 none]
+G c Z s s [crypto_box_open_detached libsodium_binding 279 13 none]
+G c Z s s [crypto_box_beforenm libsodium_binding 291 13 none]
+G c Z s s [crypto_box_easy_afternm libsodium_binding 299 13 none]
+G c Z s s [crypto_box_open_easy_afternm libsodium_binding 309 13 none]
+G c Z s s [crypto_box_detached_afternm libsodium_binding 319 13 none]
+G c Z s s [crypto_box_open_detached_afternm libsodium_binding 330 13 none]
+G c Z s s [crypto_sign_seed_keypair libsodium_binding 342 14 none]
+G c Z s s [crypto_sign_keypair libsodium_binding 350 13 none]
+G c Z s s [crypto_sign libsodium_binding 355 13 none]
+G c Z s s [crypto_sign_open libsodium_binding 365 13 none]
+G c Z s s [crypto_sign_detached libsodium_binding 375 13 none]
+G c Z s s [crypto_sign_verify_detached libsodium_binding 385 13 none]
+G c Z s s [crypto_sign_init libsodium_binding 394 13 none]
+G c Z s s [crypto_sign_update libsodium_binding 399 13 none]
+G c Z s s [crypto_sign_final_create libsodium_binding 407 13 none]
+G c Z s s [crypto_sign_final_verify libsodium_binding 416 13 none]
+G c Z s s [crypto_sign_ed25519_sk_to_seed libsodium_binding 424 13 none]
+G c Z s s [crypto_sign_ed25519_sk_to_pk libsodium_binding 429 13 none]
+G c Z s s [crypto_box_seal libsodium_binding 436 13 none]
+G c Z s s [crypto_box_seal_open libsodium_binding 445 13 none]
+G c Z s s [crypto_generichash libsodium_binding 456 13 none]
+G c Z s s [crypto_generichash_init libsodium_binding 468 13 none]
+G c Z s s [crypto_generichash_update libsodium_binding 477 13 none]
+G c Z s s [crypto_generichash_final libsodium_binding 485 13 none]
+G c Z s s [crypto_generichash_keygen libsodium_binding 493 14 none]
+G c Z s s [crypto_shorthash libsodium_binding 499 13 none]
+G c Z s s [crypto_shorthash_keygen libsodium_binding 508 14 none]
+G c Z s s [crypto_hash libsodium_binding 514 13 none]
+G c Z s s [crypto_pwhash libsodium_binding 523 14 none]
+G c Z s s [crypto_pwhash_str libsodium_binding 537 13 none]
+G c Z s s [crypto_pwhash_str_verify libsodium_binding 547 13 none]
+G c Z s s [crypto_pwhash_str_needs_rehash libsodium_binding 555 13 none]
+G c Z s s [crypto_kx_seed_keypair libsodium_binding 564 14 none]
+G c Z s s [crypto_kx_keypair libsodium_binding 572 13 none]
+G c Z s s [crypto_kx_client_session_keys libsodium_binding 577 13 none]
+G c Z s s [crypto_kx_server_session_keys libsodium_binding 587 13 none]
+G c Z s s [crypto_kdf_derive_from_key libsodium_binding 601 13 none]
+G c Z s s [crypto_kdf_keygen libsodium_binding 611 14 none]
+G c Z s s [block8IP libsodium_binding 17 9 none]
+G c Z s s [block64IP libsodium_binding 18 9 none]
+G c Z s s [stringIP libsodium_binding 19 9 none]
+G c Z s s [crypto_secretstream_stateIP libsodium_binding 21 9 none]
+G c Z s s [crypto_hash_stateIP libsodium_binding 28 9 none]
+G c Z s s [crypto_sign_stateIP libsodium_binding 35 9 none]
+G c Z s s [crypto_generichash_stateIP libsodium_binding 40 9 none]
+X 3 interfac.ads
+38K9*Interfaces 184e15 5|4r6 4r24
+X 4 i-c.ads
+18K20*C 230e17 5|4w17 4r35
+35I9*int<integer> 5|54r32 65r35 74r34 98r28 111r26 121r26 132r26 143r26 162r26
+. 175r27 183r26 196r30 211r29 220r29 235r32 240r74 251r27 262r27 274r27 286r27
+. 294r27 304r26 314r26 325r26 336r26 345r29 350r75 360r27 370r27 380r27 389r27
+. 394r69 402r29 411r27 419r27 424r84 429r80 440r27 450r27 462r33 472r30 480r30
+. 488r30 503r26 517r30 531r13 531r25 542r33 550r34 558r33 567r29 572r72 582r34
+. 592r34 606r28
+X 5 libsodium_binding.ads
+7K9*Libsodium_Binding 616l5 616e22
+11N4*MAX_BYTES 16r39
+14I9*uint64<long_integer> 16r21 18r46 45r48 61r29 63r25 64r19 65r20 71r31
+. 73r23 74r19 80r56 87r14 98r13 109r14 119r14 130r14 141r14 170r20 172r14
+. 174r15 191r20 194r14 196r15 210r18 219r18 248r14 259r14 271r14 283r14 302r14
+. 312r14 323r14 334r14 357r21 359r14 367r20 369r15 377r22 379r14 388r14 402r14
+. 410r22 439r14 448r14 460r18 480r15 502r15 517r15 525r16 527r19 529r18 530r18
+. 540r19 541r18 542r18 550r19 557r18 558r18 603r20 604r19
+15M9*uint8 17r45 175r13 192r15 458r19 462r19 471r19 472r16 488r16
+16I12*Index{14I9} 17r26 18r27 19r26
+17A9*Block8(15M9)<14I9> 22r24 23r24 24r24 31r14 41r17 62r17 72r13 80r41 86r18
+. 88r14 96r14 97r14 107r15 108r11 110r11 111r11 117r15 118r11 120r11 121r11
+. 127r15 128r17 129r11 131r11 132r11 138r15 139r11 140r13 142r11 143r11 148r47
+. 154r68 161r15 162r11 169r15 171r11 173r12 182r11 183r11 190r15 193r11 195r12
+. 208r19 209r18 211r14 217r14 218r17 220r14 225r42 233r16 234r16 235r17 240r42
+. 240r59 246r15 247r11 249r11 250r12 251r12 257r15 258r11 260r11 261r12 262r12
+. 268r15 269r17 270r11 272r11 273r12 274r12 280r15 281r11 282r13 284r11 285r12
+. 286r12 292r15 293r12 294r12 300r15 301r11 303r11 304r11 310r15 311r11 313r11
+. 314r11 320r15 321r17 322r11 324r11 325r11 331r15 332r11 333r13 335r11 336r11
+. 343r16 344r16 345r14 350r43 350r60 356r16 358r11 360r12 366r15 368r12 370r12
+. 376r17 378r11 380r12 386r13 387r11 389r12 401r11 409r17 411r12 418r13 419r12
+. 424r56 424r69 429r52 429r65 437r15 438r11 440r12 446r15 447r11 449r12 450r12
+. 457r19 459r17 461r14 470r11 479r14 487r19 493r49 500r19 501r14 503r11 508r47
+. 515r19 516r14 524r19 528r14 565r16 566r16 567r14 572r40 572r57 578r16 579r16
+. 580r19 581r19 582r19 588r16 589r16 590r19 591r19 592r19 602r20 606r13 611r41
+18A9*Block64(14I9)<14I9> 29r16 30r16
+19A9*String(character)<14I9> 526r16 538r19 539r16 548r13 549r16 556r20 605r13
+21R9*crypto_secretstream_state 26e6 160r19 168r22 181r19 189r22 201r74
+22a7*k{17A9}
+23a7*nonce{17A9}
+24a7*u_pad{17A9}
+28R9*crypto_hash_state 33e4 36r13
+29a7*state{18A9}
+30a7*count{18A9}
+31a7*buf{17A9}
+35R9*crypto_sign_state 38e6 394r43 400r19 408r22 417r22
+36r7*hs{28R9}
+40R9*crypto_generichash_state 43e6 469r19 478r22 486r22
+41a7*opaque{17A9}
+45V13*crypto_box_messagebytes_max{14I9}
+54V13*sodium_init{4|35I9}
+60V13*sodium_pad{4|35I9} 61<7 62<7 63>7 64>7 65>7
+61i7 padded_buflen_p{14I9}
+62a7 buf{17A9}
+63i7 unpadded_buflen{14I9}
+64i7 blocksize{14I9}
+65i7 max_buflen{14I9}
+70V13*sodium_unpad{4|35I9} 71<7 72>7 73>7 74>7
+71i7 unpadded_buflen_p{14I9}
+72a7 buf{17A9}
+73i7 padded_buflen{14I9}
+74i7 blocksize{14I9}
+80U14*randombytes_buf 80<31 80>49
+80a31 buf{17A9}
+80i49 size{14I9}
+85U14*randombytes_buf_deterministic 86<7 87>7 88>7
+86a7 buf{17A9}
+87i7 size{14I9}
+88a7 seed{17A9}
+95V13*sodium_memcmp{4|35I9} 96>7 97>7 98>7
+96a7 b1_u{17A9}
+97a7 b2_u{17A9}
+98i7 len{14I9}
+106V13*crypto_secretbox_easy{4|35I9} 107<7 108>7 109>7 110>7 111>7
+107a7 c{17A9}
+108a7 m{17A9}
+109i7 mlen{14I9}
+110a7 n{17A9}
+111a7 k{17A9}
+116V13*crypto_secretbox_open_easy{4|35I9} 117<7 118>7 119>7 120>7 121>7
+117a7 m{17A9}
+118a7 c{17A9}
+119i7 clen{14I9}
+120a7 n{17A9}
+121a7 k{17A9}
+126V13*crypto_secretbox_detached{4|35I9} 127<7 128<7 129>7 130>7 131>7 132>7
+127a7 c{17A9}
+128a7 mac{17A9}
+129a7 m{17A9}
+130i7 mlen{14I9}
+131a7 n{17A9}
+132a7 k{17A9}
+137V13*crypto_secretbox_open_detached{4|35I9} 138<7 139>7 140>7 141>7 142>7
+. 143>7
+138a7 m{17A9}
+139a7 c{17A9}
+140a7 mac{17A9}
+141i7 clen{14I9}
+142a7 n{17A9}
+143a7 k{17A9}
+148U14*crypto_secretbox_keygen 148<39
+148a39 k{17A9}
+154U14*crypto_secretstream_xchacha20poly1305_keygen 154<60
+154a60 k{17A9}
+159V13*crypto_secretstream_xchacha20poly1305_init_push{4|35I9} 160<7 161<7
+. 162>7
+160r7 state{21R9}
+161a7 h{17A9}
+162a7 k{17A9}
+167V13*crypto_secretstream_xchacha20poly1305_push{4|35I9} 168=7 169<7 170<7
+. 171>7 172>7 173>7 174>7 175>7
+168r7 state{21R9}
+169a7 c{17A9}
+170i7 clen_p{14I9}
+171a7 m{17A9}
+172i7 mlen{14I9}
+173a7 ad{17A9}
+174i7 adlen{14I9}
+175m7 tag{15M9}
+180V13*crypto_secretstream_xchacha20poly1305_init_pull{4|35I9} 181<7 182>7
+. 183>7
+181r7 state{21R9}
+182a7 h{17A9}
+183a7 k{17A9}
+188V13*crypto_secretstream_xchacha20poly1305_pull{4|35I9} 189=7 190<7 191<7
+. 192>7 193>7 194>7 195>7 196>7
+189r7 state{21R9}
+190a7 m{17A9}
+191i7 mlen_p{14I9}
+192m7 tag_p{15M9}
+193a7 c{17A9}
+194i7 clen{14I9}
+195a7 ad{17A9}
+196i7 adlen{14I9}
+201U14*crypto_secretstream_xchacha20poly1305_rekey 201=59
+201r59 state{21R9}
+207V13*crypto_auth{4|35I9} 208<7 209>7 210>7 211>7
+208a7 c_out{17A9}
+209a7 c_in{17A9}
+210i7 inlen{14I9}
+211a7 k{17A9}
+216V13*crypto_auth_verify{4|35I9} 217>7 218>7 219>7 220>7
+217a7 h{17A9}
+218a7 c_in{17A9}
+219i7 inlen{14I9}
+220a7 k{17A9}
+225U14*crypto_auth_keygen 225<34
+225a34 k{17A9}
+232V13*crypto_box_seed_keypair{4|35I9} 233<7 234<7 235>7
+233a7 pk{17A9}
+234a7 sk{17A9}
+235a7 seed{17A9}
+240V13*crypto_box_keypair{4|35I9} 240<33 240<50
+240a33 pk{17A9}
+240a50 sk{17A9}
+245V13*crypto_box_easy{4|35I9} 246<7 247>7 248>7 249>7 250>7 251>7
+246a7 c{17A9}
+247a7 m{17A9}
+248i7 mlen{14I9}
+249a7 n{17A9}
+250a7 pk{17A9}
+251a7 sk{17A9}
+256V13*crypto_box_open_easy{4|35I9} 257<7 258>7 259>7 260>7 261>7 262>7
+257a7 m{17A9}
+258a7 c{17A9}
+259i7 clen{14I9}
+260a7 n{17A9}
+261a7 pk{17A9}
+262a7 sk{17A9}
+267V13*crypto_box_detached{4|35I9} 268<7 269<7 270>7 271>7 272>7 273>7 274>7
+268a7 c{17A9}
+269a7 mac{17A9}
+270a7 m{17A9}
+271i7 mlen{14I9}
+272a7 n{17A9}
+273a7 pk{17A9}
+274a7 sk{17A9}
+279V13*crypto_box_open_detached{4|35I9} 280<7 281>7 282>7 283>7 284>7 285>7
+. 286>7
+280a7 m{17A9}
+281a7 c{17A9}
+282a7 mac{17A9}
+283i7 clen{14I9}
+284a7 n{17A9}
+285a7 pk{17A9}
+286a7 sk{17A9}
+291V13*crypto_box_beforenm{4|35I9} 292<7 293>7 294>7
+292a7 k{17A9}
+293a7 pk{17A9}
+294a7 sk{17A9}
+299V13*crypto_box_easy_afternm{4|35I9} 300<7 301>7 302>7 303>7 304>7
+300a7 c{17A9}
+301a7 m{17A9}
+302i7 mlen{14I9}
+303a7 n{17A9}
+304a7 k{17A9}
+309V13*crypto_box_open_easy_afternm{4|35I9} 310<7 311>7 312>7 313>7 314>7
+310a7 m{17A9}
+311a7 c{17A9}
+312i7 clen{14I9}
+313a7 n{17A9}
+314a7 k{17A9}
+319V13*crypto_box_detached_afternm{4|35I9} 320<7 321<7 322>7 323>7 324>7
+. 325>7
+320a7 c{17A9}
+321a7 mac{17A9}
+322a7 m{17A9}
+323i7 mlen{14I9}
+324a7 n{17A9}
+325a7 k{17A9}
+330V13*crypto_box_open_detached_afternm{4|35I9} 331<7 332>7 333>7 334>7 335>7
+. 336>7
+331a7 m{17A9}
+332a7 c{17A9}
+333a7 mac{17A9}
+334i7 clen{14I9}
+335a7 n{17A9}
+336a7 k{17A9}
+342V14*crypto_sign_seed_keypair{4|35I9} 343<7 344<7 345>7
+343a7 pk{17A9}
+344a7 sk{17A9}
+345a7 seed{17A9}
+350V13*crypto_sign_keypair{4|35I9} 350<34 350<51
+350a34 pk{17A9}
+350a51 sk{17A9}
+355V13*crypto_sign{4|35I9} 356<7 357<7 358>7 359>7 360>7
+356a7 sm{17A9}
+357i7 smlen_p{14I9}
+358a7 m{17A9}
+359i7 mlen{14I9}
+360a7 sk{17A9}
+365V13*crypto_sign_open{4|35I9} 366<7 367<7 368>7 369>7 370>7
+366a7 m{17A9}
+367i7 mlen_p{14I9}
+368a7 sm{17A9}
+369i7 smlen{14I9}
+370a7 pk{17A9}
+375V13*crypto_sign_detached{4|35I9} 376<7 377<7 378>7 379>7 380>7
+376a7 sig{17A9}
+377i7 siglen_p{14I9}
+378a7 m{17A9}
+379i7 mlen{14I9}
+380a7 sk{17A9}
+385V13*crypto_sign_verify_detached{4|35I9} 386>7 387>7 388>7 389>7
+386a7 sig{17A9}
+387a7 m{17A9}
+388i7 mlen{14I9}
+389a7 pk{17A9}
+394V13*crypto_sign_init{4|35I9} 394<31
+394r31 state{35R9}
+399V13*crypto_sign_update{4|35I9} 400<7 401>7 402>7
+400r7 state{35R9}
+401a7 m{17A9}
+402i7 mlen{14I9}
+407V13*crypto_sign_final_create{4|35I9} 408=7 409<7 410<7 411>7
+408r7 state{35R9}
+409a7 sig{17A9}
+410i7 siglen_p{14I9}
+411a7 sk{17A9}
+416V13*crypto_sign_final_verify{4|35I9} 417=7 418>7 419>7
+417r7 state{35R9}
+418a7 sig{17A9}
+419a7 pk{17A9}
+424V13*crypto_sign_ed25519_sk_to_seed{4|35I9} 424<45 424>64
+424a45 seed{17A9}
+424a64 sk{17A9}
+429V13*crypto_sign_ed25519_sk_to_pk{4|35I9} 429<43 429>60
+429a43 pk{17A9}
+429a60 sk{17A9}
+436V13*crypto_box_seal{4|35I9} 437<7 438>7 439>7 440>7
+437a7 c{17A9}
+438a7 m{17A9}
+439i7 mlen{14I9}
+440a7 pk{17A9}
+445V13*crypto_box_seal_open{4|35I9} 446<7 447>7 448>7 449>7 450>7
+446a7 m{17A9}
+447a7 c{17A9}
+448i7 clen{14I9}
+449a7 pk{17A9}
+450a7 sk{17A9}
+456V13*crypto_generichash{4|35I9} 457<7 458>7 459>7 460>7 461>7 462>7
+457a7 c_out{17A9}
+458m7 outlen{15M9}
+459a7 c_in{17A9}
+460i7 inlen{14I9}
+461a7 K{17A9}
+462m7 keylen{15M9}
+468V13*crypto_generichash_init{4|35I9} 469<7 470>7 471>7 472>7
+469r7 state{40R9}
+470a7 K{17A9}
+471m7 Block8len{15M9}
+472m7 outlen{15M9}
+477V13*crypto_generichash_update{4|35I9} 478=7 479>7 480>7
+478r7 state{40R9}
+479a7 c_in{17A9}
+480i7 inlen{14I9}
+485V13*crypto_generichash_final{4|35I9} 486=7 487<7 488>7
+486r7 state{40R9}
+487a7 c_out{17A9}
+488m7 outlen{15M9}
+493U14*crypto_generichash_keygen 493<41
+493a41 k{17A9}
+499V13*crypto_shorthash{4|35I9} 500<7 501>7 502>7 503>7
+500a7 c_out{17A9}
+501a7 c_in{17A9}
+502i7 inlen{14I9}
+503a7 k{17A9}
+508U14*crypto_shorthash_keygen 508<39
+508a39 k{17A9}
+514V13*crypto_hash{4|35I9} 515<7 516>7 517>7
+515a7 c_out{17A9}
+516a7 c_in{17A9}
+517i7 inlen{14I9}
+523V14*crypto_pwhash{4|35I9} 524<7 525>7 526>7 527>7 528>7 529>7 530>7 531>7
+524a7 c_out{17A9}
+525i7 outlen{14I9}
+526a7 passwd{19A9}
+527i7 passwdlen{14I9}
+528a7 salt{17A9}
+529i7 opslimit{14I9}
+530i7 memlimit{14I9}
+531i7 alg{4|35I9}
+537V13*crypto_pwhash_str{4|35I9} 538<7 539>7 540>7 541>7 542>7
+538a7 c_out{19A9}
+539a7 passwd{19A9}
+540i7 passwdlen{14I9}
+541i7 opslimit{14I9}
+542i7 memlimit{14I9}
+547V13*crypto_pwhash_str_verify{4|35I9} 548>7 549>7 550>7
+548a7 str{19A9}
+549a7 passwd{19A9}
+550i7 passwdlen{14I9}
+555V13*crypto_pwhash_str_needs_rehash{4|35I9} 556=7 557>7 558>7
+556a7 str{19A9}
+557i7 opslimit{14I9}
+558i7 memlimit{14I9}
+564V14*crypto_kx_seed_keypair{4|35I9} 565<7 566<7 567>7
+565a7 pk{17A9}
+566a7 sk{17A9}
+567a7 seed{17A9}
+572V13*crypto_kx_keypair{4|35I9} 572<32 572<48
+572a32 pk{17A9}
+572a48 sk{17A9}
+577V13*crypto_kx_client_session_keys{4|35I9} 578<7 579<7 580>7 581>7 582>7
+578a7 rx{17A9}
+579a7 tx{17A9}
+580a7 client_pk{17A9}
+581a7 client_sk{17A9}
+582a7 server_pk{17A9}
+587V13*crypto_kx_server_session_keys{4|35I9} 588<7 589<7 590>7 591>7 592>7
+588a7 rx{17A9}
+589a7 tx{17A9}
+590a7 server_pk{17A9}
+591a7 server_sk{17A9}
+592a7 client_pk{17A9}
+601V13*crypto_kdf_derive_from_key{4|35I9} 602<7 603>7 604>7 605>7 606>7
+602a7 subkey{17A9}
+603i7 subkey_len{14I9}
+604i7 subkey_id{14I9}
+605a7 ctx{19A9}
+606a7 key{17A9}
+611U14*crypto_kdf_keygen 611<33
+611a33 k{17A9}
+

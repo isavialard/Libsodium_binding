@@ -1,7 +1,6 @@
 pragma SPARK_Mode;
 
 with Ada.Text_IO;  use Ada.Text_IO;
-with Libsodium_Binding; use Libsodium_Binding;
 with Libsodium_Interface; use Libsodium_Interface;
 with Interfaces.C; use Interfaces.C;
 

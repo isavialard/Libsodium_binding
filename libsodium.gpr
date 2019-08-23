@@ -1,9 +1,9 @@
-project LibSodium is
-    for Languages use ("Ada","C");
-    for Source_Dirs use ("common","libsodium_body/**","include/**","test","examples");
+library project LibSodium is
+   for Languages use ("Ada","C");
+
+    for Source_Dirs use ("common","libsodium_body/**","include/**");
     for Object_Dir use "obj";
 
-   for Main use ("nonce_used_twice_example.adb");
 
    package Compiler is
       for Switches ("ada") use ("-gnata", "-gnatwa", "-gnaty3M79SabCdefhiklnprstux", "-g", "-O0");
@@ -14,5 +14,8 @@ project LibSodium is
       for Switches ("ada")  use ("-g");
    end builder;
 
+   for Library_Name use "Libsodium_Binding";
+   for Library_Dir use "lib";
+   for Library_Kind use "Static";
 
 end Libsodium;

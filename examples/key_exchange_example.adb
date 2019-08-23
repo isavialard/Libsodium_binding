@@ -38,40 +38,36 @@ begin
    Put_Line ("The client asks a question to the server:");
    Crypto_Secretbox_Easy (Cipher_Q, Q_Client, N_Q, Client_TX);
    for I in Q_Client'First .. Q_Client'Last loop
-      Put (uint8'Image(Q_Client(I)));
+      Put (uint8'Image (Q_Client (I)));
    end loop;
    Put_Line ("");
    Put_Line (" Encrypted question :");
    for I in Q_Client'First .. Q_Client'Last + Crypto_Secretbox_MACBYTES loop
-      Put (uint8'Image(Cipher_Q(I)));
+      Put (uint8'Image (Cipher_Q (I)));
    end loop;
    Put_Line ("");
    Put_Line ("The server decrypts it");
    Crypto_Secretbox_Open_Easy (Q_Server, Cipher_Q, N_Q, Server_RX);
-    for I in Q_Server'First .. Q_Server'Last loop
-      Put (uint8'Image(Q_Server(I)));
+   for I in Q_Server'First .. Q_Server'Last loop
+      Put (uint8'Image (Q_Server (I)));
    end loop;
    Put_Line ("");
    Put_Line ("The server answers to the client:");
    Crypto_Secretbox_Easy (Cipher_A, A_Server, N_A, Server_TX);
    for I in Q_Client'First .. Q_Client'Last loop
-      Put (uint8'Image(A_Server(I)));
+      Put (uint8'Image (A_Server (I)));
    end loop;
    Put_Line ("");
    Put_Line (" Encrypted answer :");
    for I in Q_Client'First .. Q_Client'Last + Crypto_Secretbox_MACBYTES loop
-      Put (uint8'Image(Cipher_A(I)));
+      Put (uint8'Image (Cipher_A (I)));
    end loop;
    Put_Line ("");
    Put_Line ("The client decrypts it");
    Crypto_Secretbox_Open_Easy (A_Client, Cipher_A, N_A, Client_RX);
    for I in Q_Server'First .. Q_Server'Last loop
-      Put (uint8'Image(A_Client(I)));
+      Put (uint8'Image (A_Client (I)));
    end loop;
    Put_Line ("");
-
-
-
-
 
 end Key_Exchange_Example;

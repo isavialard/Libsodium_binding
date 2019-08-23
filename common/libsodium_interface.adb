@@ -51,12 +51,14 @@ package body Libsodium_Interface is
       for I in Buf'First .. Buf'Last loop
          Huge_Buf (I) := Buf (I);
       end loop;
-      if sodium_pad (uint64 (Padded_Length), Block8 (Huge_Buf), Block8 (Buf)'Length, Blocksize,
+      if sodium_pad (uint64 (Padded_Length), Block8 (Huge_Buf),
+                     Block8 (Buf)'Length, Blocksize,
                      Padding_MAXBYTES) /= 0
       then
          raise Crypto_Error;
       end if;
-      Padded_Buf := Plain_Text (Huge_Buf) (Buf'First .. Buf'First + Padded_Length - 1);
+      Padded_Buf := Plain_Text (Huge_Buf)
+        (Buf'First .. Buf'First + Padded_Length - 1);
    end Sodium_Pad;
    procedure Sodium_Unpad
      (Buf        :    out Plain_Text;
@@ -65,8 +67,8 @@ package body Libsodium_Interface is
    is
       Unpadded_Length : uint64;
    begin
-      if sodium_unpad (Unpadded_Length, Block8 (Padded_Buf), Block8 (Padded_Buf)'Length,
-                       Blocksize) /= 0
+      if sodium_unpad (Unpadded_Length, Block8 (Padded_Buf),
+                       Block8 (Padded_Buf)'Length, Blocksize) /= 0
       then
          raise Crypto_Error;
       end if;
@@ -311,8 +313,10 @@ package body Libsodium_Interface is
             opslimit := Crypto_Pwhash_OPSLIMIT_SENSITIVE;
             memlimit := Crypto_Pwhash_MEMLIMIT_SENSITIVE;
       end case;
-      if Libsodium_Binding.crypto_pwhash_str (Libsodium_Binding.String (H), Libsodium_Binding.String (Passwd), Passwd'Length,
-                                              opslimit, memlimit) /= 0
+      if Libsodium_Binding.crypto_pwhash_str (Libsodium_Binding.String (H),
+                                             Libsodium_Binding.String (Passwd),
+                                             Passwd'Length,
+                                             opslimit, memlimit) /= 0
       then
             raise Crypto_Error;
       end if;
@@ -323,8 +327,9 @@ package body Libsodium_Interface is
       Passwd      : in Password) return int
    is
    begin
-      return crypto_pwhash_str_verify (Libsodium_Binding.String (H), Libsodium_Binding.String (Passwd),
-                                                         Passwd'Length);
+      return crypto_pwhash_str_verify (Libsodium_Binding.String (H),
+                                       Libsodium_Binding.String (Passwd),
+                                       Passwd'Length);
    end Crypto_Pwhash_Str_Verify;
 
    ----------------
@@ -338,7 +343,9 @@ package body Libsodium_Interface is
       K : in     Secretbox_Key)
    is
    begin
-      if crypto_secretbox_easy (Block8 (C), Block8 (M), M'Length, Block8 (N), Block8 (K)) /= 0 then
+      if crypto_secretbox_easy (Block8 (C), Block8 (M), M'Length, Block8 (N),
+                                Block8 (K)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Secretbox_Easy;
@@ -350,7 +357,9 @@ package body Libsodium_Interface is
       K : in     Secretbox_Key)
    is
    begin
-      if crypto_secretbox_open_easy (Block8 (M), Block8 (C), C'Length, Block8 (N), Block8 (K)) /= 0 then
+      if crypto_secretbox_open_easy (Block8 (M), Block8 (C), C'Length,
+                                     Block8 (N), Block8 (K)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Secretbox_Open_Easy;
@@ -363,7 +372,9 @@ package body Libsodium_Interface is
       K   : in     Secretbox_Key)
    is
    begin
-      if crypto_secretbox_detached (Block8 (C), Block8 (Mac), Block8 (M), M'Length, Block8 (N), Block8 (K)) /= 0 then
+      if crypto_secretbox_detached (Block8 (C), Block8 (Mac), Block8 (M),
+                                    M'Length, Block8 (N), Block8 (K)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Secretbox_Detached;
@@ -438,8 +449,6 @@ package body Libsodium_Interface is
       end if;
    end Crypto_Secretstream_Push;
 
-
-
    procedure Crypto_Secretstream_Init_Pull
      (State  :    out crypto_secretstream_state;
       H      : in     Header;
@@ -476,8 +485,6 @@ package body Libsodium_Interface is
       end if;
    end Crypto_Secretstream_Pull;
 
-
-
    procedure Crypto_Secretstream_Rekey
      (State : in out crypto_secretstream_state)
    is
@@ -506,7 +513,8 @@ package body Libsodium_Interface is
       K : in Auth_Key) return int
    is
    begin
-      return  crypto_auth_verify (Block8 (H), Block8 (M), M'Length, Block8 (K));
+      return  crypto_auth_verify (Block8 (H), Block8 (M), M'Length,
+                                  Block8 (K));
    end Crypto_Auth_Verify;
 
    procedure Crypto_Auth_Key (K : out Auth_Key)
@@ -525,7 +533,8 @@ package body Libsodium_Interface is
       Seed : in     Box_Key_Seed)
    is
    begin
-      if crypto_box_seed_keypair (Block8 (PK), Block8 (SK), Block8 (Seed)) /= 0 then
+      if crypto_box_seed_keypair (Block8 (PK), Block8 (SK), Block8 (Seed)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Seed_Keypair;
@@ -547,7 +556,9 @@ package body Libsodium_Interface is
       SK : in     Box_Secret_Key)
    is
    begin
-      if crypto_box_easy (Block8 (C), Block8 (M), M'Length, Block8 (N), Block8 (PK), Block8 (SK)) /= 0 then
+      if crypto_box_easy (Block8 (C), Block8 (M), M'Length, Block8 (N),
+                          Block8 (PK), Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Easy;
@@ -560,7 +571,9 @@ package body Libsodium_Interface is
       SK : in     Box_Secret_Key)
    is
    begin
-      if crypto_box_open_easy (Block8 (M), Block8 (C), C'Length, Block8 (N), Block8 (PK), Block8 (SK)) /= 0 then
+      if crypto_box_open_easy (Block8 (M), Block8 (C), C'Length, Block8 (N),
+                               Block8 (PK), Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Open_Easy;
@@ -574,7 +587,9 @@ package body Libsodium_Interface is
       SK  : in     Box_Secret_Key)
    is
    begin
-      if crypto_box_detached (Block8 (C), Block8 (Mac), Block8 (M), M'Length, Block8 (N), Block8 (PK), Block8 (SK)) /= 0 then
+      if crypto_box_detached (Block8 (C), Block8 (Mac), Block8 (M), M'Length,
+                              Block8 (N), Block8 (PK), Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Detached;
@@ -588,7 +603,10 @@ package body Libsodium_Interface is
       SK  : in     Box_Secret_Key)
    is
    begin
-      if crypto_box_open_detached (Block8 (M), Block8 (C), Block8 (Mac), C'Length, Block8 (N), Block8 (PK), Block8 (SK)) /= 0 then
+      if crypto_box_open_detached (Block8 (M), Block8 (C), Block8 (Mac),
+                                   C'Length, Block8 (N), Block8 (PK),
+                                   Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Open_Detached;
@@ -611,7 +629,9 @@ package body Libsodium_Interface is
       K : in     Box_Shared_Key)
    is
    begin
-      if crypto_box_easy_afternm (Block8 (C), Block8 (M), M'Length, Block8 (N), Block8 (K)) /= 0 then
+      if crypto_box_easy_afternm (Block8 (C), Block8 (M), M'Length, Block8 (N),
+                                  Block8 (K)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Easy_Afternm;
@@ -623,7 +643,9 @@ package body Libsodium_Interface is
       K : in     Box_Shared_Key)
    is
    begin
-      if crypto_box_open_easy_afternm (Block8 (M), Block8 (C), C'Length, Block8 (N), Block8 (K)) /= 0 then
+      if crypto_box_open_easy_afternm (Block8 (M), Block8 (C), C'Length,
+                                       Block8 (N), Block8 (K)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Open_Easy_Afternm;
@@ -636,7 +658,9 @@ package body Libsodium_Interface is
       K   : in     Box_Shared_Key)
    is
    begin
-      if crypto_box_detached_afternm (Block8 (C), Block8 (Mac), Block8 (M), M'Length, Block8 (N), Block8 (K)) /= 0 then
+      if crypto_box_detached_afternm (Block8 (C), Block8 (Mac), Block8 (M),
+                                      M'Length, Block8 (N), Block8 (K)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Detached_Afternm;
@@ -649,7 +673,11 @@ package body Libsodium_Interface is
       K   : in     Box_Shared_Key)
    is
    begin
-      if crypto_box_open_detached_afternm (Block8 (M), Block8 (C), Block8 (Mac), C'Length, Block8 (N), Block8 (K)) /= 0 then
+      if crypto_box_open_detached_afternm (Block8 (M), Block8 (C),
+                                           Block8 (Mac),
+                                           C'Length, Block8 (N),
+                                           Block8 (K)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Open_Detached_Afternm;
@@ -664,7 +692,9 @@ package body Libsodium_Interface is
       PK : in     Box_Public_Key)
    is
    begin
-      if crypto_box_seal (Block8 (C), Block8 (M), M'Length, Block8 (PK)) /= 0 then
+      if crypto_box_seal (Block8 (C), Block8 (M), M'Length,
+                          Block8 (PK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Seal;
@@ -676,7 +706,9 @@ package body Libsodium_Interface is
       SK : in     Box_Secret_Key)
    is
    begin
-      if crypto_box_seal_open (Block8 (M), Block8 (C), C'Length, Block8 (PK), Block8 (SK)) /= 0 then
+      if crypto_box_seal_open (Block8 (M), Block8 (C), C'Length, Block8 (PK),
+                               Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Box_Seal_Open;
@@ -691,7 +723,9 @@ package body Libsodium_Interface is
       Seed : in     Sign_Key_Seed)
    is
    begin
-      if crypto_sign_seed_keypair (Block8 (PK), Block8 (SK), Block8 (Seed)) /= 0 then
+      if crypto_sign_seed_keypair (Block8 (PK), Block8 (SK),
+                                   Block8 (Seed)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Sign_Seed_Keypair;
@@ -712,7 +746,9 @@ package body Libsodium_Interface is
    is
       SMlen : uint64;
    begin
-      if crypto_sign (Block8 (SM), SMlen, Block8 (M), M'Length, Block8 (SK)) /= 0 then
+      if crypto_sign (Block8 (SM), SMlen, Block8 (M), M'Length,
+                      Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Sign;
@@ -724,7 +760,9 @@ package body Libsodium_Interface is
    is
       Mlen : uint64;
    begin
-      if crypto_sign_open (Block8 (M), Mlen, Block8 (SM), SM'Length, Block8 (PK)) /= 0 then
+      if crypto_sign_open (Block8 (M), Mlen, Block8 (SM), SM'Length,
+                           Block8 (PK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Sign_Open;
@@ -736,7 +774,9 @@ package body Libsodium_Interface is
    is
       Siglen : uint64;
    begin
-      if crypto_sign_detached (Block8 (Sig), Siglen, Block8 (M), M'Length, Block8 (SK)) /= 0 then
+      if crypto_sign_detached (Block8 (Sig), Siglen, Block8 (M), M'Length,
+                               Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Sign_Detached;
@@ -747,7 +787,8 @@ package body Libsodium_Interface is
       PK  : in Sign_Public_Key) return int
    is
    begin
-      return crypto_sign_verify_detached (Block8 (Sig), Block8 (M), M'Length, Block8 (PK));
+      return crypto_sign_verify_detached (Block8 (Sig), Block8 (M), M'Length,
+                                          Block8 (PK));
    end Crypto_Sign_Verify_Detached;
 
    procedure Crypto_Sign_Init (state : out crypto_sign_state)
@@ -775,7 +816,9 @@ package body Libsodium_Interface is
    is
       Siglen : uint64;
    begin
-      if crypto_sign_final_create (State, Block8 (Sig), Siglen, Block8 (SK)) /= 0 then
+      if crypto_sign_final_create (State, Block8 (Sig), Siglen,
+                                   Block8 (SK)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Sign_Final_Create;
@@ -819,7 +862,9 @@ package body Libsodium_Interface is
       Seed : in     Kx_Key_Seed)
    is
    begin
-      if crypto_kx_seed_keypair (Block8 (PK), Block8 (SK), Block8 (Seed)) /= 0 then
+      if crypto_kx_seed_keypair (Block8 (PK), Block8 (SK),
+                                 Block8 (Seed)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Kx_Seed_Keypair;
@@ -840,8 +885,9 @@ package body Libsodium_Interface is
       Server_PK : in     Kx_Public_Key)
    is
    begin
-      if crypto_kx_client_session_keys (Block8 (RX), Block8 (TX), Block8 (Client_PK),
-                                        Block8 (Client_SK), Block8 (Server_PK)) /= 0
+      if crypto_kx_client_session_keys (Block8 (RX), Block8 (TX),
+                                        Block8 (Client_PK), Block8 (Client_SK),
+                                        Block8 (Server_PK)) /= 0
       then
          raise Crypto_Error;
       end if;
@@ -855,8 +901,9 @@ package body Libsodium_Interface is
       Client_PK : in     Kx_Public_Key)
    is
    begin
-      if crypto_kx_server_session_keys (Block8 (RX), Block8 (TX), Block8 (Server_PK),
-                                        Block8 (Server_SK), Block8 (Client_PK)) /= 0
+      if crypto_kx_server_session_keys (Block8 (RX), Block8 (TX),
+                                        Block8 (Server_PK), Block8 (Server_SK),
+                                        Block8 (Client_PK)) /= 0
       then
          raise Crypto_Error;
       end if;
@@ -872,9 +919,13 @@ package body Libsodium_Interface is
       Context : in     Kdf_Context := "Context ";
       Key     : in     Kdf_Key)
    is
-      sublen : uint64 := Subkey'Length;
+      sublen : constant uint64 := Subkey'Length;
    begin
-      if Libsodium_Binding.crypto_kdf_derive_from_key (Subkey, Sublen, ID, Libsodium_Binding.String (Context), Block8 (Key)) /= 0 then
+      if Libsodium_Binding.crypto_kdf_derive_from_key (Subkey, sublen, ID,
+                                                       Libsodium_Binding.String
+                                                         (Context),
+                                                       Block8 (Key)) /= 0
+      then
          raise Crypto_Error;
       end if;
    end Crypto_Kdf_Derive_From_Key;
@@ -882,7 +933,7 @@ package body Libsodium_Interface is
    procedure Crypto_Kdf_Key (K : out Kdf_Key)
    is
    begin
-      crypto_kdf_keygen (Block8(K));
+      crypto_kdf_keygen (Block8 (K));
    end Crypto_Kdf_Key;
 
 end Libsodium_Interface;
