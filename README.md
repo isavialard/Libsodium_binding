@@ -2,13 +2,13 @@
 
 The repository contains:
 
-    • The project file libsodium.gpr.
+    - The project file libsodium.gpr.
 
-    • The librairy directory lib.
+    - The librairy directory lib.
 
-• The common directory which contains:
+    - The common directory which contains:
 
-        ◦ The libsodium_binding package, a low-level binding in Ada made from the files generated using the Ada spec dump compiler.
+        - The libsodium_binding package, a low-level binding in Ada made from the files generated using the Ada spec dump compiler.
 
         ◦ The libsodium_interface package, a higher level binding in SPARK which uses libsodium_binding.
 
